@@ -147,3 +147,22 @@ links to whichever is cheaper. Sixt's own site still beats both.
 
 In Booking's response the supplier is not on the offer: `match.route.pickUpDepotId`
 points into `depots`, whose `supplierId` points into `suppliers`.
+
+### A third engine, and why it matters
+
+DiscoverCars carries a different inventory again: 682 offers for Linate on these
+dates, 393 of them automatic, from 29 suppliers. Fifteen of those are brokers that
+neither Booking nor CarTrawler sells at all: Rental4leisure, Ciao Rent Car,
+Clarent, Moventur, RentSmart24, MT Rent, Optimo Rent, Differental, SRC, B-Rent,
+plus Hertz, Thrifty, Dollar and National.
+
+That is where the cheap prices are. The cheapest automatic is 259 ILS for the six
+days, a Fiat 500X with five seats from Rental4leisure on a free shuttle from the
+terminal, against 640 ILS for a two-seat Fiat 500e through the official channels.
+The trade is basic conditions: a large deposit and a large excess.
+
+Its search cannot be linked: the results live at `/search/<session-guid>` and the
+`sq` query parameter is decorative, so a hand-built URL lands on "page not found".
+The date picker also ignores synthetic events; only real CDP mouse clicks on the
+day buttons register. The page therefore links to their Linate page and says the
+dates have to be entered again.
