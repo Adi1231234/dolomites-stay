@@ -81,3 +81,21 @@ Laion and Ponte Gardena have no open dated search of their own, so they appear
 only through the HGV engine (33 of 98 registry entries). IDM's provincial portal
 exposes an Algolia proxy at `idm-all-apim-prod-001.azure-api.net` with a public
 key embedded in the page, but it serves catalogue content, not dated availability.
+
+## The photos
+
+All 1,137 gallery photos are stored in this repo under `img/`, in two WebP
+sizes: `img/s` at 360px for the card thumbnails and `img/l` at 820px for the
+lightbox (66 MB in total). They used to be hotlinked from the three tourist
+board CDNs, which meant a fresh TLS handshake per host and roughly 1.5 s before
+a photo appeared; from this origin the same photo opens in under 0.5 s.
+
+Two things are worth keeping in mind when regenerating:
+
+- The build order is `images.py` → `imgfetch.py` → `make_html2.py`. `imgfetch.py`
+  rewrites `gallery_c` from CDN tokens into local ids, so running `images.py`
+  again undoes that and it has to be re-run.
+- The lightbox arrows are SVG, not the `‹` `›` characters. Those characters
+  carry the Unicode `Bidi_Mirrored` property, so in an RTL page the browser
+  flips them and they end up pointing inward no matter which way round they are
+  written.
