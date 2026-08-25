@@ -99,6 +99,7 @@ section .sub { margin:4px 0 13px; color:var(--mut); font-size:14px; }
   padding:10px 18px; min-height:42px; display:inline-flex; align-items:center;
   border-radius:10px; background:var(--accent); color:var(--accent-ink);
   -webkit-tap-highlight-color:transparent; }
+.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--mut)}
 .btn:active { transform:scale(.98); }
 .empty { margin:0; color:var(--mut); font-size:14.5px; background:var(--panel);
   border:1px dashed var(--line); border-radius:12px; padding:16px; }
@@ -134,7 +135,6 @@ footer { margin-top:22px; text-align:center; font-size:12.5px; color:var(--mut);
 </head>
 <body>
 <div class="wrap">
-
 <header>
   <h1>איפה לישון בדולומיטים</h1>
   <p class="tag">כל האופציות הזמינות שעומדות בתנאים, מהזול ליקר</p>
@@ -147,12 +147,12 @@ footer { margin-top:22px; text-align:center; font-size:12.5px; color:var(--mut);
     <span>מעל <b>720 ₪</b> לא מוצג</span>
   </div>
   <details class="stats">
-    <summary><span>נבדקו <b>440</b> מקומות · <b>102</b> זמינים</span></summary>
+    <summary><span><b>150</b> מקומות זמינים · <b>153</b> הצעות חדר</span></summary>
     <div class="grid">
-      <div><div class="n">1502</div><div class="l">מקומות לינה רשומים באזור</div></div>
-      <div><div class="n">440</div><div class="l">נבדקו במנוע ההזמנות</div></div>
-      <div><div class="n">102</div><div class="l">זמינים בתאריכים</div></div>
-      <div><div class="n">338</div><div class="l">תפוסים לגמרי</div></div>
+      <div><div class="n">1,502</div><div class="l">בתי הארחה רשומים באזור</div></div>
+      <div><div class="n">150</div><div class="l">זמינים בתאריכים ובתקציב</div></div>
+      <div><div class="n">84</div><div class="l">דירות עם מטבח עד 600</div></div>
+      <div><div class="n">153</div><div class="l">הצעות ברמת חדר</div></div>
     </div>
   </details>
 </header>
@@ -163,619 +163,1417 @@ footer { margin-top:22px; text-align:center; font-size:12.5px; color:var(--mut);
   <button data-f="board" aria-pressed="false">עם 2 ארוחות</button>
 </div></div>
 
-<section id="t1">
-<h2>מטבח בחדר, עד 600 ₪</h2><p class="sub">זה בדיוק מה שחיפשת.</p>
-<div class="cards"><article class="card" data-kitchen="1" data-board="0">
-<div class="top">
-<div class="id"><span class="rank">1</span><h3>Residence Oberaldoss</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪475</b><span>ללילה</span></div>
-</div>
+<section id="t1"><h2>מטבח בחדר, עד 600 ₪</h2><p class="sub">זה בדיוק מה שחיפשת. 84 אופציות.</p><div class="cards"><article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">1</span><h3>Haus Unterdill</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪210</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,048 ל-5 לילות · €300</div><a class="btn" href="http://www.haus-unterdill.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">2</span><h3>Puntschiedhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪210</b><span>ללילה</span></div></div>
+<p class="room">דירה 45 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,048 ל-5 לילות · €300</div><a class="btn" href="http://www.puntschiedhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">3</span><h3>Rundschunerhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪210</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,048 ל-5 לילות · €300</div><a class="btn" href="http://www.rundschuh.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">4</span><h3>Pschoyerhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪237</b><span>ללילה</span></div></div>
+<p class="room">דירה 40 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">40 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,187 ל-5 לילות · €340</div><a class="btn btn-ghost" href="https://www.google.com/search?q=Pschoyerhof Castelrotto" target="_blank" rel="noopener">חיפוש ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">5</span><h3>Stampfeterhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪244</b><span>ללילה</span></div></div>
+<p class="room">דירה 40 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">40 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,222 ל-5 לילות · €350</div><a class="btn" href="http://www.stampfeterhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">6</span><h3>Miesnerhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪244</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,222 ל-5 לילות · €350</div><a class="btn" href="http://www.miesnerhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">7</span><h3>Sattlerhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪248</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,240 ל-5 לילות · €355</div><a class="btn btn-ghost" href="https://www.google.com/search?q=Sattlerhof Castelrotto" target="_blank" rel="noopener">חיפוש ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">8</span><h3>Puntschuhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪269</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,344 ל-5 לילות · €385</div><a class="btn" href="http://www.puntschuhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">9</span><h3>Innergosthof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪272</b><span>ללילה</span></div></div>
+<p class="room">דירה 45 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,362 ל-5 לילות · €390</div><a class="btn" href="http://www.innergosthof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">10</span><h3>Kamaunhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪279</b><span>ללילה</span></div></div>
+<p class="room">דירה 16 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">16 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,397 ל-5 לילות · €400</div><a class="btn" href="http://www.kamaunhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">11</span><h3>Stampfeterhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪279</b><span>ללילה</span></div></div>
+<p class="room">דירה 70 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">70 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,397 ל-5 לילות · €400</div><a class="btn" href="http://www.stampfeterhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">12</span><h3>Baumgartnerhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪279</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,397 ל-5 לילות · €400</div><a class="btn" href="http://www.baumgartnerhof.eu" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">13</span><h3>Christelehof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪297</b><span>ללילה</span></div></div>
+<p class="room">דירה 40 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">40 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,484 ל-5 לילות · €425</div><a class="btn" href="http://www.christelehof-kastelruth.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">14</span><h3>Lafreider-Hof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪297</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,484 ל-5 לילות · €425</div><a class="btn" href="http://www.lafreiderhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">15</span><h3>Apartment Santner</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪297</b><span>ללילה</span></div></div>
+<p class="room">דירה 52 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">52 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,484 ל-5 לילות · €425</div><a class="btn" href="https://www.parlunkhof.com/de/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">16</span><h3>Profillerhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪297</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,484 ל-5 לילות · €425</div><a class="btn" href="http://www.profillerhof.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">17</span><h3>Simmele Müllerhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪297</b><span>ללילה</span></div></div>
+<p class="room">דירה 52 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">52 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,484 ל-5 לילות · €425</div><a class="btn" href="http://www.simmelemueller.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">18</span><h3>Pristingerhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪307</b><span>ללילה</span></div></div>
+<p class="room">דירה 45 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,536 ל-5 לילות · €440</div><a class="btn" href="http://www.pristingerhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">19</span><h3>Appartments Villa Olympia</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪311</b><span>ללילה</span></div></div>
+<p class="room">דירה 100 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">100 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,554 ל-5 לילות · €445</div><a class="btn" href="http://www.siusi.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">20</span><h3>Haus Unterdill</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪314</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,571 ל-5 לילות · €450</div><a class="btn" href="http://www.haus-unterdill.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">21</span><h3>Riemerhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪314</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,571 ל-5 לילות · €450</div><a class="btn btn-ghost" href="https://www.google.com/search?q=Riemerhof Castelrotto" target="_blank" rel="noopener">חיפוש ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">22</span><h3>Wergeserhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪314</b><span>ללילה</span></div></div>
+<p class="room">דירה 70 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">70 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,571 ל-5 לילות · €450</div><a class="btn" href="http://www.wergeserhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">23</span><h3>Puntschiedhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪314</b><span>ללילה</span></div></div>
+<p class="room">דירה 60 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">60 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,571 ל-5 לילות · €450</div><a class="btn" href="http://www.puntschiedhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">24</span><h3>Stampfeterhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪314</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,571 ל-5 לילות · €450</div><a class="btn" href="http://www.stampfeterhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">25</span><h3>Maso Bremich</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪314</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,571 ל-5 לילות · €450</div><a class="btn" href="http://www.bremichhof.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">26</span><h3>Gästehaus Sonnenbühl</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪314</b><span>ללילה</span></div></div>
+<p class="room">דירה 45 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,571 ל-5 לילות · €450</div><a class="btn" href="http://www.sonnenbuehl.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">27</span><h3>Christelehof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪316</b><span>ללילה</span></div></div>
+<p class="room">דירה 50 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">50 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,582 ל-5 לילות · €453</div><a class="btn" href="http://www.christelehof-kastelruth.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">28</span><h3>Tschafernaghof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪318</b><span>ללילה</span></div></div>
+<p class="room">דירה 35 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">35 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,589 ל-5 לילות · €455</div><a class="btn" href="http://www.tschafernaghof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">29</span><h3>Haus Rabensteiner</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪328</b><span>ללילה</span></div></div>
+<p class="room">דירה 40 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">40 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,641 ל-5 לילות · €470</div><a class="btn" href="http://www.residencerabensteiner.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">30</span><h3>Apartments Malfertheiner</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪335</b><span>ללילה</span></div></div>
+<p class="room">דירה 50 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">50 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,676 ל-5 לילות · €480</div><a class="btn" href="http://www.malfertheiner.bz.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">31</span><h3>Haus Einfeld</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪349</b><span>ללילה</span></div></div>
+<p class="room">דירה 20 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">20 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,746 ל-5 לילות · €500</div><a class="btn" href="http://www.haus-einfeld.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">32</span><h3>Haus Sabina</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪349</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,746 ל-5 לילות · €500</div><a class="btn" href="http://www.haus-sabina.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">33</span><h3>Apartement Fill Paul</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪349</b><span>ללילה</span></div></div>
+<p class="room">דירה 50 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">50 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,746 ל-5 לילות · €500</div><a class="btn" href="http://www.fillpaul.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">34</span><h3>Fegerhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪349</b><span>ללילה</span></div></div>
+<p class="room">דירה 44 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">44 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,746 ל-5 לילות · €500</div><a class="btn" href="http://www.feger.bz" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">35</span><h3>Haus Bergfrieden</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪349</b><span>ללילה</span></div></div>
+<p class="room">דירה 55 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">55 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,746 ל-5 לילות · €500</div><a class="btn" href="http://www.bergfrieden-seis.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">36</span><h3>Christelehof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪356</b><span>ללילה</span></div></div>
+<p class="room">דירה 90 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">90 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,781 ל-5 לילות · €510</div><a class="btn" href="http://www.christelehof-kastelruth.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">37</span><h3>House Dorfblick</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪363</b><span>ללילה</span></div></div>
+<p class="room">דירה 28 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">28 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,816 ל-5 לילות · €520</div><a class="btn" href="http://www.dorfblick.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">38</span><h3>Fiziderhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪367</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,833 ל-5 לילות · €525</div><a class="btn" href="http://www.fiziderhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">39</span><h3>Zemmerhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪367</b><span>ללילה</span></div></div>
+<p class="room">דירה 60 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">60 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,833 ל-5 לילות · €525</div><a class="btn" href="http://www.zemmerhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">40</span><h3>Apartments Villa Tannenheim</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪367</b><span>ללילה</span></div></div>
+<p class="room">דירה 43 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">43 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,833 ל-5 לילות · €525</div><a class="btn" href="http://www.villatannenheim.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">41</span><h3>Apartments Villa Tannenheim</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪367</b><span>ללילה</span></div></div>
+<p class="room">דירה 65 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">65 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,833 ל-5 לילות · €525</div><a class="btn" href="http://www.villatannenheim.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">42</span><h3>Innergosthof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪370</b><span>ללילה</span></div></div>
+<p class="room">דירה 45 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">45 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,851 ל-5 לילות · €530</div><a class="btn" href="http://www.innergosthof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">43</span><h3>Maso Polz</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪384</b><span>ללילה</span></div></div>
+<p class="room">דירה 54 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">54 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,921 ל-5 לילות · €550</div><a class="btn" href="http://www.polzhof.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">44</span><h3>Maso Niglutsch</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪384</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,921 ל-5 לילות · €550</div><a class="btn" href="http://www.niglutsch.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">45</span><h3>Kreuzerhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪384</b><span>ללילה</span></div></div>
+<p class="room">דירה 53 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">53 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,921 ל-5 לילות · €550</div><a class="btn" href="http://www.kreuzerhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">46</span><h3>Garni Lantschner</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪412</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,060 ל-5 לילות · €590</div><a class="btn" href="http://www.garni-lantschner.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">47</span><h3>Villa Bernhard</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪419</b><span>ללילה</span></div></div>
+<p class="room">דירה 54 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">54 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,095 ל-5 לילות · €600</div><a class="btn" href="http://www.villabernhard.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">48</span><h3>Apartments Mühlegg</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪419</b><span>ללילה</span></div></div>
+<p class="room">דירה 44 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">44 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,095 ל-5 לילות · €600</div><a class="btn" href="http://www.muehlegg-kastelruth.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">49</span><h3>Prosslinerhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪419</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,095 ל-5 לילות · €600</div><a class="btn" href="http://www.prossliner-hof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">50</span><h3>Appartments Villa Olympia</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪436</b><span>ללילה</span></div></div>
+<p class="room">דירה 130 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">130 מ״ר</span><span class="chip">עד 7 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,182 ל-5 לילות · €625</div><a class="btn" href="http://www.siusi.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">51</span><h3>Treffhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪448</b><span>ללילה</span></div></div>
+<p class="room">דירה 50 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">50 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,242 ל-5 לילות · €642</div><a class="btn" href="http://www.treffhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">52</span><h3>Garni Alpin</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪454</b><span>ללילה</span></div></div>
+<p class="room">דירה 28 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">28 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,270 ל-5 לילות · €650</div><a class="btn" href="http://www.garni-alpin.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">53</span><h3>Ronsolhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪454</b><span>ללילה</span></div></div>
+<p class="room">דירה 40 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">40 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,270 ל-5 לילות · €650</div><a class="btn" href="http://www.ronsolhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">54</span><h3>Haus Bernard</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪454</b><span>ללילה</span></div></div>
+<p class="room">דירה 40 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">40 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,270 ל-5 לילות · €650</div><a class="btn" href="http://www.bernard-seis.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">55</span><h3>Haus Bernard</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪454</b><span>ללילה</span></div></div>
+<p class="room">דירה 42 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">42 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,270 ל-5 לילות · €650</div><a class="btn" href="http://www.bernard-seis.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">56</span><h3>Maso Paal</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪454</b><span>ללילה</span></div></div>
+<p class="room">דירה 20 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">20 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,270 ל-5 לילות · €650</div><a class="btn" href="http://www.paalhof.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">57</span><h3>Residence Oberaldoss</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪475</b><span>ללילה</span></div></div>
 <p class="room">Apartment &quot;Soldanella&quot; for 2 persons</p>
 <div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">30 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,374 ל-5 לילות · €680 </div>
-<a class="btn" href="https://www.oberaldoss.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,374 ל-5 לילות · €680</div><a class="btn" href="https://www.oberaldoss.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="1" data-board="0">
-<div class="top">
-<div class="id"><span class="rank">2</span><h3>Apartments Jasmin</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪499</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><span class="rank">58</span><h3>Villa Tilia</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪478</b><span>ללילה</span></div></div>
+<p class="room">דירה 45 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,392 ל-5 לילות · €685</div><a class="btn" href="http://www.villatilia.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">59</span><h3>Garni Doris</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪482</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,409 ל-5 לילות · €690</div><a class="btn" href="http://www.garnidoris.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">60</span><h3>Farm Felderer</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪489</b><span>ללילה</span></div></div>
+<p class="room">דירה 57 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">57 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,444 ל-5 לילות · €700</div><a class="btn" href="http://www.felderer.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">61</span><h3>Farm Felderer</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪489</b><span>ללילה</span></div></div>
+<p class="room">דירה 54 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">54 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,444 ל-5 לילות · €700</div><a class="btn" href="http://www.felderer.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">62</span><h3>Farm Felderer</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪489</b><span>ללילה</span></div></div>
+<p class="room">דירה 100 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">100 מ״ר</span><span class="chip">עד 7 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,444 ל-5 לילות · €700</div><a class="btn" href="http://www.felderer.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">63</span><h3>Haus Bergfrieden</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪489</b><span>ללילה</span></div></div>
+<p class="room">דירה 45 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,444 ל-5 לילות · €700</div><a class="btn" href="http://www.bergfrieden-seis.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">64</span><h3>Apartments Jasmin</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪499</b><span>ללילה</span></div></div>
 <p class="room">One-Bedroom Apartment</p>
 <div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">50 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,497 ל-5 לילות · €715 </div>
-<a class="btn" href="https://www.muse.holiday/apartment.php?key=101jasmin" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,497 ל-5 לילות · €715</div><a class="btn" href="https://www.muse.holiday/apartment.php?key=101jasmin" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="1" data-board="0">
-<div class="top">
-<div class="id"><span class="rank">3</span><h3>Garni Zilli</h3><p class="loc">לאיון · 17 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪499</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><span class="rank">65</span><h3>Garni Zilli</h3><p class="loc">לאיון · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪499</b><span>ללילה</span></div></div>
 <p class="room">1-bedroom appartment with balcony</p>
 <div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,497 ל-5 לילות · €715 </div>
-<a class="btn" href="https://www.muse.holiday/apartment.php?key=302zilli" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,497 ל-5 לילות · €715</div><a class="btn" href="https://www.muse.holiday/apartment.php?key=302zilli" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="1" data-board="0">
-<div class="top">
-<div class="id"><span class="rank">4</span><h3>Garni-Hotel Dlaces</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪517</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><span class="rank">66</span><h3>Pitzelterhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪506</b><span>ללילה</span></div></div>
+<p class="room">דירה 65 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">65 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,532 ל-5 לילות · €725</div><a class="btn" href="http://www.pitzelterhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">67</span><h3>Residence Park</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪506</b><span>ללילה</span></div></div>
+<p class="room">דירה 45 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,532 ל-5 לילות · €725</div><a class="btn" href="http://www.park-residence.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">68</span><h3>Garni Jasmin</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪510</b><span>ללילה</span></div></div>
+<p class="room">דירה 22 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">22 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,549 ל-5 לילות · €730</div><a class="btn" href="http://www.garnijasmin.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">69</span><h3>Garni-Hotel Dlaces</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪517</b><span>ללילה</span></div></div>
 <p class="room">Apartment Romantic</p>
 <div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">35 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,584 ל-5 לילות · €740 <span class="g">Google: ₪1,040</span></div>
-<a class="btn" href="https://www.dlaces.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,584 ל-5 לילות · €740</div><a class="btn" href="https://www.dlaces.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="1" data-board="0">
-<div class="top">
-<div class="id"><span class="rank">5</span><h3>Residence Oberaldoss</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪517</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><span class="rank">70</span><h3>Residence Oberaldoss</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪517</b><span>ללילה</span></div></div>
 <p class="room">Apartment &quot;Soldanella&quot; for 2 persons</p>
 <div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">30 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,584 ל-5 לילות · €740 </div>
-<a class="btn" href="https://www.oberaldoss.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,584 ל-5 לילות · €740</div><a class="btn" href="https://www.oberaldoss.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="1" data-board="0">
-<div class="top">
-<div class="id"><span class="rank">6</span><h3>Garni-Hotel Miara  –  Your Dolomites Home</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪549</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><span class="rank">71</span><h3>Unterkalkadoi</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪524</b><span>ללילה</span></div></div>
+<p class="room">דירה 27 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">27 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,619 ל-5 לילות · €750</div><a class="btn" href="http://www.geniesserhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">72</span><h3>Haus Schieder</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪524</b><span>ללילה</span></div></div>
+<p class="room">דירה 70 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">70 מ״ר</span><span class="chip">עד 7 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,619 ל-5 לילות · €750</div><a class="btn" href="http://www.haus-schieder.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">73</span><h3>Garni-Hotel Miara  –  Your Dolomites Home</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪549</b><span>ללילה</span></div></div>
 <p class="room">Apartment 2-4 persons</p>
 <div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">35 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,744 ל-5 לילות · €786 </div>
-<a class="btn" href="http://www.garnimiara.com" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,744 ל-5 לילות · €786</div><a class="btn" href="http://www.garnimiara.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="1" data-board="0">
-<div class="top">
-<div class="id"><span class="rank">7</span><h3>Wieshof</h3><p class="loc">לאיון · 17 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪559</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><span class="rank">74</span><h3>Naturresidence Dolomitenhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪550</b><span>ללילה</span></div></div>
+<p class="room">דירה 40 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">40 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,752 ל-5 לילות · €788</div><a class="btn" href="http://www.dolomitenhof.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">75</span><h3>Aparthotel Viktoria</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪558</b><span>ללילה</span></div></div>
+<p class="room">דירה 45 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,790 ל-5 לילות · €799</div><a class="btn" href="http://www.hotel-viktoria.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">76</span><h3>Wieshof</h3><p class="loc">לאיון · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪559</b><span>ללילה</span></div></div>
 <p class="room">Rustica</p>
 <div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">65 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800 </div>
-<a class="btn" href="http://www.wieshof.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800</div><a class="btn" href="http://www.wieshof.it" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="1" data-board="0">
-<div class="top">
-<div class="id"><span class="rank">8</span><h3>Residence Isabell</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪594</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><span class="rank">77</span><h3>Villa Bernhard</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪559</b><span>ללילה</span></div></div>
+<p class="room">דירה 54 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">54 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800</div><a class="btn" href="http://www.villabernhard.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">78</span><h3>Haus Lohengrin</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪559</b><span>ללילה</span></div></div>
+<p class="room">דירה 70 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">70 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800</div><a class="btn" href="http://www.hauslohengrin.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">79</span><h3>Haus Schieder</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪559</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800</div><a class="btn" href="http://www.haus-schieder.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">80</span><h3>Naturresidence Dolomitenhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪580</b><span>ללילה</span></div></div>
+<p class="room">דירה 42 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">42 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,898 ל-5 לילות · €830</div><a class="btn" href="http://www.dolomitenhof.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">81</span><h3>Residence Isabell</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪594</b><span>ללילה</span></div></div>
 <p class="room">Residence Isabell: 2-room apartment with balcony or garden terrace</p>
 <div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">60 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,968 ל-5 לילות · €850 </div>
-<a class="btn" href="http://www.isabell.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
-</article></div>
-</section>
-
-<section id="t2">
-<h2>2 ארוחות כלולות, עד 600 ₪</h2><p class="sub">חצי פנסיון או פנסיון מלא, בלי צורך במטבח.</p>
-<div class="cards"><p class="empty">אין. חצי הפנסיון הזול ביותר באזור בתאריכים האלה הוא 629 ₪ ללילה.</p></div>
-</section>
-
-<section id="t3">
-<h2>מתחת ל-600 ₪, בלי מטבח ובלי 2 ארוחות</h2><p class="sub">לינה בלבד או עם ארוחת בוקר. נכנס לתקציב.</p>
-<div class="cards"><article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Haus Einfeld</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪349</b><span>ללילה</span></div>
-</div>
+<div class="foot"><div class="tot">₪2,968 ל-5 לילות · €850</div><a class="btn" href="http://www.isabell.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">82</span><h3>Villa Bernhard</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪594</b><span>ללילה</span></div></div>
+<p class="room">דירה 63 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">63 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,968 ל-5 לילות · €850</div><a class="btn" href="http://www.villabernhard.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">83</span><h3>Max Green Wood Apartments</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪594</b><span>ללילה</span></div></div>
+<p class="room">דירה 58 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">58 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,968 ל-5 לילות · €850</div><a class="btn" href="http://www.maxgreen.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><span class="rank">84</span><h3>Hotel Solaia</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪599</b><span>ללילה</span></div></div>
+<p class="room">דירה 42 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">42 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,996 ל-5 לילות · €858</div><a class="btn" href="http://www.solaia.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article></div></section>
+<section id="t2"><h2>2 ארוחות כלולות, עד 600 ₪</h2><p class="sub">חצי פנסיון או פנסיון מלא.</p><div class="cards"><p class="empty">אין. חצי הפנסיון הזול ביותר שנמצא הוא 601 ₪ ללילה, ב-Hotel Dolomiti Madonna באורטיזיי.</p></div></section>
+<section id="t3"><h2>עד 600 ₪, בלי מטבח ובלי 2 ארוחות</h2><p class="sub">לינה בלבד או עם ארוחת בוקר.</p><div class="cards"><article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Riemerhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪105</b><span>ללילה</span></div></div>
+<p class="room">יחידה 20 מ״ר</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">20 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪524 ל-5 לילות · €150</div><a class="btn btn-ghost" href="https://www.google.com/search?q=Riemerhof Castelrotto" target="_blank" rel="noopener">חיפוש ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Baumgartnerhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪175</b><span>ללילה</span></div></div>
+<p class="room">יחידה</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪873 ל-5 לילות · €250</div><a class="btn" href="http://www.baumgartnerhof.eu" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Kamaunhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪244</b><span>ללילה</span></div></div>
+<p class="room">יחידה 11 מ״ר</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">11 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,222 ל-5 לילות · €350</div><a class="btn" href="http://www.kamaunhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Zemmerhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪244</b><span>ללילה</span></div></div>
+<p class="room">יחידה 45 מ״ר</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,222 ל-5 לילות · €350</div><a class="btn" href="http://www.zemmerhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Gästehaus Rosslaufhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪335</b><span>ללילה</span></div></div>
+<p class="room">יחידה</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,676 ל-5 לילות · €480</div><a class="btn" href="http://www.rosslaufhof.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Haus Einfeld</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪349</b><span>ללילה</span></div></div>
 <p class="room">double room C</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">20 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
-<div class="foot"><div class="tot">₪1,746 ל-5 לילות · €500 </div>
-<a class="btn" href="http://www.haus-einfeld.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪1,746 ל-5 לילות · €500</div><a class="btn" href="http://www.haus-einfeld.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni Lantschner</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪412</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni Lantschner</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪412</b><span>ללילה</span></div></div>
 <p class="room">Double Room Schlern</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,060 ל-5 לילות · €590 </div>
-<a class="btn" href="http://www.garni-lantschner.com" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,060 ל-5 לילות · €590</div><a class="btn" href="http://www.garni-lantschner.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Gasthof Zur Sonne</h3><p class="loc">לאיון · 17 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪443</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Gasthof Zur Sonne</h3><p class="loc">לאיון · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪443</b><span>ללילה</span></div></div>
 <p class="room">Apartment</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">54 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,217 ל-5 לילות · €635 </div>
-<a class="btn" href="http://www.zursonne.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,217 ל-5 לילות · €635</div><a class="btn" href="http://www.zursonne.it" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel Rezia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪513</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni Doris</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪447</b><span>ללילה</span></div></div>
+<p class="room">יחידה</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,235 ל-5 לילות · €640</div><a class="btn" href="http://www.garnidoris.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Farmhouse Gunz</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪500</b><span>ללילה</span></div></div>
+<p class="room">יחידה 60 מ״ר</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">60 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,500 ל-5 לילות · €716</div><a class="btn btn-ghost" href="https://www.google.com/search?q=Farmhouse Gunz Castelrotto" target="_blank" rel="noopener">חיפוש ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Garni-Hotel Rezia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪513</b><span>ללילה</span></div></div>
 <p class="room">Premium</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">28 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,567 ל-5 לילות · €735 </div>
-<a class="btn" href="http://www.garnirezia.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,567 ל-5 לילות · €735</div><a class="btn" href="http://www.garnirezia.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Dolomiti Madonna</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
-<div class="pr"><b>₪517</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Dolomiti Madonna</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪517</b><span>ללילה</span></div></div>
 <p class="room">Double room Standard</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">21 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,584 ל-5 לילות · €740 </div>
-<a class="btn" href="http://www.hotel-madonna.com" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,584 ל-5 לילות · €740</div><a class="btn" href="http://www.hotel-madonna.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel Aghel Suites &amp; Apartments</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪524</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Hotel Aghel Suites &amp; Apartments</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪524</b><span>ללילה</span></div></div>
 <p class="room">Double room Superior with balcony</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">33 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,619 ל-5 לילות · €750 <span class="g">Google: ₪840</span></div>
-<a class="btn" href="http://www.aghel.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,619 ל-5 לילות · €750</div><a class="btn" href="http://www.aghel.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>B&amp;B - Apartments Maso Larciunei - Bauernhof</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪545</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>B&amp;B - Apartments Maso Larciunei - Bauernhof</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪545</b><span>ללילה</span></div></div>
 <p class="room">Bera Zenz</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,724 ל-5 לילות · €780 <span class="g">Google: ₪743</span></div>
-<a class="btn" href="http://masolarciunei.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,724 ל-5 לילות · €780</div><a class="btn" href="http://masolarciunei.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Corona - Krone</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪555</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Corona - Krone</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪555</b><span>ללילה</span></div></div>
 <p class="room">Double Economy</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,773 ל-5 לילות · €794 </div>
-<a class="btn" href="http://www.hotel-corona.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,773 ל-5 לילות · €794</div><a class="btn" href="http://www.hotel-corona.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Apartments Chalet Villa Muse</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪555</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Apartments Chalet Villa Muse</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪555</b><span>ללילה</span></div></div>
 <p class="room">One-Bedroom Apartment with balcony</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">50 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,776 ל-5 לילות · €795 </div>
-<a class="btn" href="https://www.muse.holiday/apartment.php?key=141muse" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,776 ל-5 לילות · €795</div><a class="btn" href="https://www.muse.holiday/apartment.php?key=141muse" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel Rezia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪557</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Hotel Rezia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪557</b><span>ללילה</span></div></div>
 <p class="room">Premium</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">28 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,787 ל-5 לילות · €798 </div>
-<a class="btn" href="http://www.garnirezia.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪2,787 ל-5 לילות · €798</div><a class="btn" href="http://www.garnirezia.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Residence Risaccia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪569</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Apartment Kastelruth</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪559</b><span>ללילה</span></div></div>
+<p class="room">יחידה 65 מ״ר</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">65 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800</div><a class="btn" href="http://www.apartment-kastelruth.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Residence Risaccia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪569</b><span>ללילה</span></div></div>
 <p class="room">Apartment Danter</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">80 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
-<div class="foot"><div class="tot">₪2,846 ל-5 לילות · €815 </div>
-<a class="btn" href="http://www.risaccia.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
-</article></div>
-</section>
-
-<section id="t4">
-<h2>600–720 ₪ ללילה</h2><p class="sub">קצת מעל התקציב. מעל 720 ₪ לא מוצג בכלל.</p>
-<div class="cards"><article class="card" data-kitchen="0" data-board="1">
-<div class="top">
-<div class="id"><h3>Hotel Dolomiti Madonna</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
-<div class="pr"><b>₪601</b><span>ללילה</span></div>
-</div>
+<div class="foot"><div class="tot">₪2,846 ל-5 לילות · €815</div><a class="btn" href="http://www.risaccia.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article></div></section>
+<section id="t4"><h2>600–720 ₪ ללילה</h2><p class="sub">קצת מעל התקציב.</p><div class="cards"><article class="card" data-kitchen="0" data-board="1">
+<div class="top"><div class="id"><h3>Hotel Dolomiti Madonna</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪601</b><span>ללילה</span></div></div>
 <p class="room">Double room Standard</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ok">חצי פנסיון (2 ארוחות)</span><span class="chip">21 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,003 ל-5 לילות · €860 </div>
-<a class="btn" href="http://www.hotel-madonna.com" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,003 ל-5 לילות · €860</div><a class="btn" href="http://www.hotel-madonna.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel La Bercia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪601</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Hotel La Bercia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪601</b><span>ללילה</span></div></div>
 <p class="room">Standard double room</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,003 ל-5 לילות · €860 </div>
-<a class="btn" href="https://www.garnilabercia.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,003 ל-5 לילות · €860</div><a class="btn" href="https://www.garnilabercia.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Residence Risaccia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪604</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Residence Risaccia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪604</b><span>ללילה</span></div></div>
 <p class="room">Apartment Sai Uedli</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">85 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,020 ל-5 לילות · €865 </div>
-<a class="btn" href="http://www.risaccia.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,020 ל-5 לילות · €865</div><a class="btn" href="http://www.risaccia.it" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Naturresidence Dolomitenhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪606</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Naturresidence Dolomitenhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪606</b><span>ללילה</span></div></div>
 <p class="room">App. C 40 m²</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">40 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,029 ל-5 לילות · €868 </div>
-<a class="btn" href="http://www.dolomitenhof.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,029 ל-5 לילות · €868</div><a class="btn" href="http://www.dolomitenhof.it" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪622</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪622</b><span>ללילה</span></div></div>
 <p class="room">premium room mountain view (1-3 pax)</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 3 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,108 ל-5 לילות · €890 <span class="g">Google: ₪648</span></div>
-<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,108 ל-5 לילות · €890</div><a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Aparthotel Viktoria</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪624</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Aparthotel Viktoria</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪624</b><span>ללילה</span></div></div>
 <p class="room">Apartment Superior</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,122 ל-5 לילות · €894 <span class="g">Google: ₪651</span></div>
-<a class="btn" href="http://www.hotel-viktoria.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,122 ל-5 לילות · €894</div><a class="btn" href="http://www.hotel-viktoria.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Residence Merk</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪624</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Residence Merk</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪624</b><span>ללילה</span></div></div>
 <p class="room">Double Room</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,118 ל-5 לילות · €893 </div>
-<a class="btn" href="http://www.residence-merk.com" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,118 ל-5 לילות · €893</div><a class="btn" href="http://www.residence-merk.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="1">
-<div class="top">
-<div class="id"><h3>Hotel Bellevue</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪629</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Bellevue</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪629</b><span>ללילה</span></div></div>
 <p class="room">Camera Superior</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ok">חצי פנסיון (2 ארוחות)</span><span class="chip">30 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,143 ל-5 לילות · €900 </div>
-<a class="btn" href="http://www.hotelbellevue-valgardena.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,143 ל-5 לילות · €900</div><a class="btn" href="http://www.hotelbellevue-valgardena.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel Miara  –  Your Dolomites Home</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪629</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Hotel Miara  –  Your Dolomites Home</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪629</b><span>ללילה</span></div></div>
 <p class="room">Juniorsuite</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">30 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,143 ל-5 לילות · €900 </div>
-<a class="btn" href="http://www.garnimiara.com" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,143 ל-5 לילות · €900</div><a class="btn" href="http://www.garnimiara.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Residence Villa al Sole</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪629</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Residence Villa al Sole</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪629</b><span>ללילה</span></div></div>
 <p class="room">Apartment 2 people</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,143 ל-5 לילות · €900 <span class="g">Google: ₪973</span></div>
-<a class="btn" href="http://www.residencealsole.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,143 ל-5 לילות · €900</div><a class="btn" href="http://www.residencealsole.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Ronsolhof</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪629</b><span>ללילה</span></div></div>
+<p class="room">דירה 60 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">60 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,143 ל-5 לילות · €900</div><a class="btn" href="http://www.ronsolhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni &amp; Appartements Sunela</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪634</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni &amp; Appartements Sunela</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪634</b><span>ללילה</span></div></div>
 <p class="room">Standard room</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">16 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,171 ל-5 לילות · €908 </div>
-<a class="btn" href="mailto:info@sunela.com">לפנייה במייל ↗</a></div>
+<div class="foot"><div class="tot">₪3,171 ל-5 לילות · €908</div><a class="btn" href="mailto:info@sunela.com">מייל ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Solaia</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪634</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Solaia</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪634</b><span>ללילה</span></div></div>
 <p class="room">Double room Sciliar</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">25 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,171 ל-5 לילות · €908 </div>
-<a class="btn" href="http://www.solaia.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,171 ל-5 לילות · €908</div><a class="btn" href="http://www.solaia.it" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Naturresidence Dolomitenhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪636</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Naturresidence Dolomitenhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪636</b><span>ללילה</span></div></div>
 <p class="room">App. B Marinzen 42m²</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">42 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,178 ל-5 לילות · €910 </div>
-<a class="btn" href="http://www.dolomitenhof.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,178 ל-5 לילות · €910</div><a class="btn" href="http://www.dolomitenhof.it" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪636</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪636</b><span>ללילה</span></div></div>
 <p class="room">superior room mountain view (1-2 pax)</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,178 ל-5 לילות · €910 <span class="g">Google: ₪648</span></div>
-<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,178 ל-5 לילות · €910</div><a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪636</b><span>ללילה</span></div>
-</div>
-<p class="room">superior room (1-3 pax)</p>
-<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 3 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,178 ל-5 לילות · €910 <span class="g">Google: ₪648</span></div>
-<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
-</article>
-<article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel Dlaces</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪636</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Hotel Dlaces</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪636</b><span>ללילה</span></div></div>
 <p class="room">superior room</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,178 ל-5 לילות · €910 <span class="g">Google: ₪1,040</span></div>
-<a class="btn" href="https://www.dlaces.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,178 ל-5 לילות · €910</div><a class="btn" href="https://www.dlaces.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="1" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Solaia</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪641</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Treffhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪637</b><span>ללילה</span></div></div>
+<p class="room">דירה 70 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">70 מ״ר</span><span class="chip">עד 7 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,185 ל-5 לילות · €912</div><a class="btn" href="http://www.treffhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Hotel Solaia</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪641</b><span>ללילה</span></div></div>
 <p class="room">Appartment Dolomiten</p>
 <div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">42 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,206 ל-5 לילות · €918 </div>
-<a class="btn" href="http://www.solaia.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,206 ל-5 לילות · €918</div><a class="btn" href="http://www.solaia.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartment Sella</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪646</b><span>ללילה</span></div></div>
+<p class="room">דירה</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,230 ל-5 לילות · €925</div><a class="btn" href="http://www.apartment-sella.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Residence Kastel Seiser Alm</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪646</b><span>ללילה</span></div></div>
+<p class="room">דירה 54 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">54 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,230 ל-5 לילות · €925</div><a class="btn" href="http://www.kastelseiseralm.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪647</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪647</b><span>ללילה</span></div></div>
 <p class="room">premium room mountain view (1-3 pax)</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 3 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,235 ל-5 לילות · €926 <span class="g">Google: ₪648</span></div>
-<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,235 ל-5 לילות · €926</div><a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel La Bercia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪649</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Hotel La Bercia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪649</b><span>ללילה</span></div></div>
 <p class="room">Premium double room</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 3 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,247 ל-5 לילות · €930 </div>
-<a class="btn" href="https://www.garnilabercia.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,247 ל-5 לילות · €930</div><a class="btn" href="https://www.garnilabercia.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel La Bercia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪653</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Hotel La Bercia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪653</b><span>ללילה</span></div></div>
 <p class="room">Apartment Stevia</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 3 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,265 ל-5 לילות · €935 </div>
-<a class="btn" href="https://www.garnilabercia.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,265 ל-5 לילות · €935</div><a class="btn" href="https://www.garnilabercia.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>House Pircher</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪653</b><span>ללילה</span></div></div>
+<p class="room">דירה 40 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">40 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,265 ל-5 לילות · €935</div><a class="btn" href="http://www.villapircher.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Max Green Wood 1 + 2</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪656</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Max Green Wood 1 + 2</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪656</b><span>ללילה</span></div></div>
 <p class="room">Apartament Wood 2</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">58 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,282 ל-5 לילות · €940 </div>
-<a class="btn" href="http://www.maxgreen.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,282 ל-5 לילות · €940</div><a class="btn" href="http://www.maxgreen.it" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪659</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪659</b><span>ללילה</span></div></div>
 <p class="room">superior room mountain view (1-2 pax)</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,295 ל-5 לילות · €944 <span class="g">Google: ₪648</span></div>
-<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,295 ל-5 לילות · €944</div><a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartment Dorfruhe</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪660</b><span>ללילה</span></div></div>
+<p class="room">דירה 40 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">40 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,300 ל-5 לילות · €945</div><a class="btn" href="http://www.apartment-dorfruhe.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni-Residence Trocker</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪660</b><span>ללילה</span></div></div>
+<p class="room">דירה 45 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,300 ל-5 לילות · €945</div><a class="btn" href="http://www.residencetrocker.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪659</b><span>ללילה</span></div>
-</div>
-<p class="room">superior room (1-3 pax)</p>
-<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 3 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,295 ל-5 לילות · €944 <span class="g">Google: ₪648</span></div>
-<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
-</article>
-<article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪663</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪663</b><span>ללילה</span></div></div>
 <p class="room">family junior suite mountain view (2-5 pax)</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 5 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,317 ל-5 לילות · €950 <span class="g">Google: ₪648</span></div>
-<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,317 ל-5 לילות · €950</div><a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel Miara  –  Your Dolomites Home</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪663</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Hotel Miara  –  Your Dolomites Home</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪663</b><span>ללילה</span></div></div>
 <p class="room">New - Prestigeroom</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">40 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,317 ל-5 לילות · €950 </div>
-<a class="btn" href="http://www.garnimiara.com" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,317 ל-5 לילות · €950</div><a class="btn" href="http://www.garnimiara.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Apartments Alara</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
-<div class="pr"><b>₪663</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Apartments Alara</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪663</b><span>ללילה</span></div></div>
 <p class="room">Two-Bedroom Apartment with garden</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">50 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,317 ל-5 לילות · €950 </div>
-<a class="btn" href="https://www.muse.holiday/apartment.php?key=134alara" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,317 ל-5 לילות · €950</div><a class="btn" href="https://www.muse.holiday/apartment.php?key=134alara" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Enzian</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪677</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Enzian</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪677</b><span>ללילה</span></div></div>
 <p class="room">Double room without balcony</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">17 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,387 ל-5 לילות · €970 </div>
-<a class="btn" href="http://www.enzianhotel.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,387 ל-5 לילות · €970</div><a class="btn" href="http://www.enzianhotel.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Residence Erika</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪677</b><span>ללילה</span></div></div>
+<p class="room">דירה 50 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">50 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,387 ל-5 לילות · €970</div><a class="btn" href="http://www.residence-erika.it" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel Dlaces</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪677</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Hotel Dlaces</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪677</b><span>ללילה</span></div></div>
 <p class="room">Juniorsuite</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,387 ל-5 לילות · €970 <span class="g">Google: ₪1,040</span></div>
-<a class="btn" href="https://www.dlaces.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,387 ל-5 לילות · €970</div><a class="btn" href="https://www.dlaces.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Alaska Ski &amp; Wellness</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪679</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Alaska Ski &amp; Wellness</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪679</b><span>ללילה</span></div></div>
 <p class="room">Superior Room</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,394 ל-5 לילות · €972 <span class="g">Google: ₪889</span></div>
-<a class="btn" href="http://www.hotelalaska.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,394 ל-5 לילות · €972</div><a class="btn" href="http://www.hotelalaska.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪683</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪683</b><span>ללילה</span></div></div>
 <p class="room">family junior suite mountain view (2-5 pax)</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 5 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,413 ל-5 לילות · €978 <span class="g">Google: ₪648</span></div>
-<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,413 ל-5 לילות · €978</div><a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Mayr</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪691</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Mayr</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪691</b><span>ללילה</span></div></div>
 <p class="room">Residence Mayr</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,457 ל-5 לילות · €990 </div>
-<a class="btn" href="http://www.hotelmayr.com" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,457 ל-5 לילות · €990</div><a class="btn" href="http://www.hotelmayr.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="1">
-<div class="top">
-<div class="id"><h3>Hotel Corona - Krone</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪694</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Corona - Krone</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪694</b><span>ללילה</span></div></div>
 <p class="room">Double Economy</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ok">חצי פנסיון (2 ארוחות)</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,471 ל-5 לילות · €994 </div>
-<a class="btn" href="http://www.hotel-corona.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,471 ל-5 לילות · €994</div><a class="btn" href="http://www.hotel-corona.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Corona - Krone</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪696</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Corona - Krone</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪696</b><span>ללילה</span></div></div>
 <p class="room">Double room Superior</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">25 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,478 ל-5 לילות · €996 </div>
-<a class="btn" href="http://www.hotel-corona.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,478 ל-5 לילות · €996</div><a class="btn" href="http://www.hotel-corona.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Pension Sonnalp</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
-<div class="pr"><b>₪698</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Hotel Pension Sonnalp</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪698</b><span>ללילה</span></div></div>
 <p class="room">Room for 4</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,492 ל-5 לילות · €1,000 </div>
-<a class="btn" href="mailto:info@hotel-pension-sonnalp.eu">לפנייה במייל ↗</a></div>
+<div class="foot"><div class="tot">₪3,492 ל-5 לילות · €1,000</div><a class="btn" href="mailto:info@hotel-pension-sonnalp.eu">מייל ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel Arya Alpine Lodge</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪698</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Hotel Arya Alpine Lodge</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪698</b><span>ללילה</span></div></div>
 <p class="room">Mountain or DeLuxe</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">22 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,492 ל-5 לילות · €1,000 </div>
-<a class="btn" href="https://www.aryaalpinelodge.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,492 ל-5 לילות · €1,000</div><a class="btn" href="https://www.aryaalpinelodge.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Hotel Solaia</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪711</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Residence Trocker</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪698</b><span>ללילה</span></div></div>
+<p class="room">יחידה</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,492 ל-5 לילות · €1,000</div><a class="btn" href="http://www.residencetrocker.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Naturresidence Dolomitenhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪702</b><span>ללילה</span></div></div>
+<p class="room">דירה 40 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">40 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,509 ל-5 לילות · €1,005</div><a class="btn" href="http://www.dolomitenhof.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Pitzelterhof</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪705</b><span>ללילה</span></div></div>
+<p class="room">דירה 65 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">65 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,527 ל-5 לילות · €1,010</div><a class="btn" href="http://www.pitzelterhof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Hotel Solaia</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪711</b><span>ללילה</span></div></div>
 <p class="room">Confortrooms Castelrotto</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">33 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,555 ל-5 לילות · €1,018 </div>
-<a class="btn" href="http://www.solaia.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,555 ל-5 לילות · €1,018</div><a class="btn" href="http://www.solaia.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Hotel Solaia</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪711</b><span>ללילה</span></div></div>
+<p class="room">דירה 33 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">33 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,555 ל-5 לילות · €1,018</div><a class="btn" href="http://www.solaia.it" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="0" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni-Hotel Miara  –  Your Dolomites Home</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪712</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Garni-Hotel Miara  –  Your Dolomites Home</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪712</b><span>ללילה</span></div></div>
 <p class="room">New - Sky Family Suite</p>
 <div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">48 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,562 ל-5 לילות · €1,020 </div>
-<a class="btn" href="http://www.garnimiara.com" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+<div class="foot"><div class="tot">₪3,562 ל-5 לילות · €1,020</div><a class="btn" href="http://www.garnimiara.com" target="_blank" rel="noopener">לאתר ↗</a></div>
 </article>
 <article class="card" data-kitchen="1" data-board="0">
-<div class="top">
-<div class="id"><h3>Garni &amp; Appartements Sunela</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪717</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Apartments Villa Tannenheim</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪716</b><span>ללילה</span></div></div>
+<p class="room">דירה 95 מ״ר</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">95 מ״ר</span><span class="chip">עד 8 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,579 ל-5 לילות · €1,025</div><a class="btn" href="http://www.villatannenheim.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni &amp; Appartements Sunela</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪717</b><span>ללילה</span></div></div>
 <p class="room">Apartment A6</p>
 <div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">43 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,583 ל-5 לילות · €1,026 </div>
-<a class="btn" href="mailto:info@sunela.com">לפנייה במייל ↗</a></div>
+<div class="foot"><div class="tot">₪3,583 ל-5 לילות · €1,026</div><a class="btn" href="mailto:info@sunela.com">מייל ↗</a></div>
 </article>
 <article class="card" data-kitchen="1" data-board="0">
-<div class="top">
-<div class="id"><h3>Residence Erika</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
-<div class="pr"><b>₪719</b><span>ללילה</span></div>
-</div>
+<div class="top"><div class="id"><h3>Residence Erika</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪719</b><span>ללילה</span></div></div>
 <p class="room">Apartment A</p>
 <div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">50 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
-<div class="foot"><div class="tot">₪3,597 ל-5 לילות · €1,030 </div>
-<a class="btn" href="http://www.residence-erika.it" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
-</article></div>
-</section>
+<div class="foot"><div class="tot">₪3,597 ל-5 לילות · €1,030</div><a class="btn" href="http://www.residence-erika.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article></div></section>
+<section id="t5"><h2>ואל גרדנה: מחיר החל מ, ברמת הנכס</h2><p class="sub">למקומות האלה לשכת התיירות מפרסמת רק מחיר פתיחה לכל השהות, בלי פירוט חדרים. צריך לאמת מול המקום.</p><div class="cards"><article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Garni Pramauron</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪192</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪960 ל-5 לילות · €275</div><a class="btn" href="http://www.pramauron.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Steinrose</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪339</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪1,697 ל-5 לילות · €486</div><a class="btn" href="https://www.steinrose.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Residence Villa Genziana</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪349</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪1,746 ל-5 לילות · €500</div><a class="btn" href="https://www.villagenziana.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>B&amp;B - Apartments Villa Gabriella</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪355</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪1,774 ל-5 לילות · €508</div><a class="btn" href="http://www.hausgabriella.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Residence Bruna</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪367</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪1,833 ל-5 לילות · €525</div><a class="btn" href="http://www.residencebruna.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Dorothea</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪384</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪1,921 ל-5 לילות · €550</div><a class="btn" href="http://www.dorothea.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Bellaria</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪388</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪1,938 ל-5 לילות · €555</div><a class="btn" href="http://www.apartmentsbellaria.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni-Hotel La Majon</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪398</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪1,990 ל-5 לילות · €570</div><a class="btn" href="http://www.lamajon.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni La Grambla</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪419</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,095 ל-5 לילות · €600</div><a class="btn" href="http://www.la-grambla.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Residence Brunello</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪419</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,095 ל-5 לילות · €600</div><a class="btn" href="http://www.residencebrunello.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni Sovara</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪419</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,095 ל-5 לילות · €600</div><a class="btn" href="http://www.garni-sovara.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Residence Lastei</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪436</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,182 ל-5 לילות · €625</div><a class="btn" href="http://www.lastei.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Garni - B&amp;B Dolomitenblick</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪447</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,235 ל-5 לילות · €640</div><a class="btn" href="http://www.garnidolomitenblick.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Residence Angelica</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪449</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,245 ל-5 לילות · €643</div><a class="btn" href="https://www.residence-angelica.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Etruska</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪449</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,245 ל-5 לילות · €643</div><a class="btn" href="http://www.etruska.net" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>B&amp;B - Apartments Serena</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪454</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,270 ל-5 לילות · €650</div><a class="btn" href="https://www.haus-serena.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Perathoner Giuseppe</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪457</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,287 ל-5 לילות · €655</div><a class="btn" href="http://www.apartmentvilletta.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Berghaus Felderer</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪457</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,287 ל-5 לילות · €655</div><a class="btn" href="http://www.berghausfelderer.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Garni Rubens</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪461</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,305 ל-5 לילות · €660</div><a class="btn" href="http://www.garni-rubens.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni Charlotte</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪475</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,374 ל-5 לילות · €680</div><a class="btn" href="http://www.garnicharlotte.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>B&amp;B - Villa Evelin</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪475</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,374 ל-5 לילות · €680</div><a class="btn" href="https://www.villaevelin.com/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Jolanda</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪489</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,444 ל-5 לילות · €700</div><a class="btn" href="http://www.apartments-jolanda.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Mussner Albert</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪489</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,444 ל-5 לילות · €700</div><a class="btn" href="http://www.apartments-jolanda.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Tramont</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪489</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,444 ל-5 לילות · €700</div><a class="btn" href="https://www.tramont.info" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Garni - B&amp;B Panoramik</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪489</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,444 ל-5 לילות · €700</div><a class="btn" href="http://www.panoramik.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>B&amp;B - Apartments Ulrike</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪489</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,444 ל-5 לילות · €700</div><a class="btn" href="http://www.ulrike.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni Vergissmeinnicht</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪496</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,479 ל-5 לילות · €710</div><a class="btn" href="http://www.vergissmeinnicht.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Bon Dì</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪499</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,493 ל-5 לילות · €714</div><a class="btn" href="https://www.bon-di.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Rondula</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪503</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,514 ל-5 לילות · €720</div><a class="btn" href="http://www.rondula-selva.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Residence Flamingo</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪513</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,567 ל-5 לילות · €735</div><a class="btn" href="http://www.residenceflamingo.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments A Sosta</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪524</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,619 ל-5 לילות · €750</div><a class="btn" href="http://www.asosta.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Garni Bon Dì</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪524</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,619 ל-5 לילות · €750</div><a class="btn" href="http://www.garnibondi.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni-Hotel Pichler</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪538</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,689 ל-5 לילות · €770</div><a class="btn" href="http://www.pensionpichler.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Villa Otto</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪541</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,706 ל-5 לילות · €775</div><a class="btn" href="https://www.villaotto.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni-Hotel Mezdi Wellness B&amp;B &amp; App.</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪544</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,720 ל-5 לילות · €779</div><a class="btn" href="http://www.mezdi.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>B&amp;B - Apartments Maso Larciunei - Farmhouse</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪545</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">Farm</span></div>
+<div class="foot"><div class="tot">₪2,724 ל-5 לילות · €780</div><a class="btn" href="http://www.masolarciunei.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni Wildbach</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪552</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,759 ל-5 לילות · €790</div><a class="btn" href="http://www.garni-wildbach.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Hotel Corona</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪555</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,773 ל-5 לילות · €794</div><a class="btn" href="http://www.hotel-corona.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni-Hotel Rosengarten</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪559</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800</div><a class="btn" href="https://www.garnihotelrosengarten.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Garni-Hotel Dolomieu - Nevada WELLNESS &amp; SPA</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪559</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800</div><a class="btn" href="http://www.dolomieu.eu" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Residence Ruaciahof</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪559</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800</div><a class="btn" href="http://www.ruaciahof.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Hetty</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪559</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800</div><a class="btn" href="https://www.apartment-hetty.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Hotel Jagdhof</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪559</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800</div><a class="btn" href="http://www.jagdhof.bz" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Garni La Tambra</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪559</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,794 ל-5 לילות · €800</div><a class="btn" href="http://www.la-tambra.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Residence La Planta</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪576</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,881 ל-5 לילות · €825</div><a class="btn" href="http://www.laplanta.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Residence Crespëina</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪599</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪2,993 ל-5 לילות · €857</div><a class="btn" href="http://www.crespeina.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Garni Franca</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪608</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪3,038 ל-5 לילות · €870</div><a class="btn" href="http://www.garnifranca.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Cedepuent de Sot</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪624</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪3,118 ל-5 לילות · €893</div><a class="btn" href="http://www.cedepuent.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Pizuela</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪629</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪3,143 ל-5 לילות · €900</div><a class="btn" href="http://www.pizuela.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Damont</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪629</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪3,143 ל-5 לילות · €900</div><a class="btn" href="https://www.damont.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Pension Villa Luise</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪629</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪3,143 ל-5 לילות · €900</div><a class="btn" href="http://www.villaluise.com" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top"><div class="id"><h3>Hotel Serena</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪684</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip">HotelPension</span></div>
+<div class="foot"><div class="tot">₪3,422 ל-5 לילות · €980</div><a class="btn" href="https://www.hotel-serena.it/" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Olympic</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪698</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪3,492 ל-5 לילות · €1,000</div><a class="btn" href="https://www.olympicholiday.it" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top"><div class="id"><h3>Apartments Seida</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪719</b><span>החל מ, ללילה</span></div></div>
+<div class="chips"><span class="chip ok">יש דירות עם מטבח</span><span class="chip">BedBreakfast</span></div>
+<div class="foot"><div class="tot">₪3,597 ל-5 לילות · €1,030</div><a class="btn" href="https://www.muse.holiday/apartment.php?key=179seida" target="_blank" rel="noopener">לאתר ↗</a></div>
+</article></div></section>
 
 <div class="note">
   <h3>מאיפה המספרים</h3>
-  <p>המחירים נשלפו ישירות ממנוע ההזמנות של התאחדות המלונאים של דרום טירול, לתאריכים המדויקים ולשני
-  מבוגרים. הזמינות אומתה פעמיים: מול נקודת הקצה של ההצעות וגם מול לוח הזמינות היומי.
-  המרה לפי 1 יורו = 3.4919 שקל, מחיר ללילה = סך השהות חלקי 5.</p>
+  <p>שלושה מקורות רשמיים, כולם לתאריכים המדויקים ולשני מבוגרים: מנוע ההזמנות של התאחדות המלונאים
+  של דרום טירול, מנוע החיפוש של לשכת התיירות אלפה די סיוזי, ומנוע החיפוש של לשכת התיירות ואל גרדנה.
+  רשימת המקומות מוצלבת מול המרשם הרשמי של המחוז (Open Data Hub), 1,502 בתי הארחה מורשים בשש העיריות.
+  המרה לפי 1 יורו = 3.4919 שקל.</p>
   <ul>
-    <li>רשימת המקומות נלקחה מהמרשם הרשמי של מחוז דרום טירול (Open Data Hub), 1502 בתי הארחה
-    מורשים בשש העיריות. מתוכם 440 נמכרים דרך מנוע ההזמנות של התאחדות המלונאים, וכל אחד מהם נבדק.
-    השאר מוכרים בערוצים אחרים או רק בפנייה ישירה.</li>
+    <li>המחירים במדורים הראשונים הם ברמת חדר או דירה מסוימת, כולל גודל, ציוד וסוג פנסיון.</li>
+    <li>במדור האחרון המחיר הוא מחיר פתיחה ברמת הנכס. הוא אמיתי ולתאריכים שלך, אבל לא בהכרח לחדר שתקבל.</li>
     <li>מס תיירות מקומי, בערך 2-3 יורו לאדם ללילה, בדרך כלל לא כלול.</li>
-    <li>מחיר Google מוצג רק להשוואה מול המחיר האמיתי במנוע ההזמנות.</li>
+    <li>לאיון ופונטה גרדנה מכוסות חלקית: רק דרך מנוע ההזמנות, כי אין להן מנוע חיפוש פתוח משלהן.</li>
   </ul>
 </div>
-
-<footer>עודכן לאחרונה בבדיקה מול מנוע ההזמנות · 102 מקומות זמינים מתוך 440 שנבדקו</footer>
-
+<footer>150 מקומות זמינים · 153 הצעות ברמת חדר · 54 עם מחיר פתיחה בלבד</footer>
 </div>
 <script>
 (function () {
@@ -785,15 +1583,12 @@ footer { margin-top:22px; text-align:center; font-size:12.5px; color:var(--mut);
   bar.addEventListener('click', function (ev) {
     var b = ev.target.closest('button');
     if (!b) return;
-    [].forEach.call(bar.querySelectorAll('button'), function (x) {
-      x.setAttribute('aria-pressed', String(x === b));
-    });
+    [].forEach.call(bar.querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', String(x === b)); });
     var f = b.dataset.f;
     cards.forEach(function (c) {
-      var show = f === 'all'
+      c.hidden = !(f === 'all'
         || (f === 'kitchen' && c.dataset.kitchen === '1')
-        || (f === 'board' && c.dataset.board === '1');
-      c.hidden = !show;
+        || (f === 'board' && c.dataset.board === '1'));
     });
     secs.forEach(function (s) {
       var list = s.querySelectorAll('.card');
