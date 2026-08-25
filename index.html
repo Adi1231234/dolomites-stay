@@ -166,29 +166,28 @@ footer { margin-top:22px; text-align:center; font-size:12.5px; color:var(--mut);
   border:3px solid rgba(255,255,255,.25); border-top-color:#fff; border-radius:50%;
   opacity:0; transition:opacity .15s ease .25s; animation:lbspin .8s linear infinite; }
 @keyframes lbspin { to { transform:rotate(360deg); } }
-/* dark disc + light rim so the controls read against a bright photo as well as a dark one */
-.lb-x, .lb-nav { position:absolute; z-index:2; cursor:pointer; color:#fff;
-  background:rgba(12,12,11,.62); border:1.5px solid rgba(255,255,255,.9);
-  backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
-  box-shadow:0 3px 14px rgba(0,0,0,.65), 0 0 0 1px rgba(0,0,0,.35);
-  text-shadow:0 1px 3px rgba(0,0,0,.9);
+/* Glass disc with a thin rim: legible over a bright photo, still quiet over a dark one.
+   The icons are SVG on purpose - the ‹ › characters are bidi-mirrored and flip in an RTL page. */
+.lb-x, .lb-nav { position:absolute; z-index:2; cursor:pointer; color:#fff; padding:0;
+  background:rgba(10,10,9,.5); border:1px solid rgba(255,255,255,.5);
+  backdrop-filter:blur(10px) saturate(1.2); -webkit-backdrop-filter:blur(10px) saturate(1.2);
+  box-shadow:0 6px 20px rgba(0,0,0,.45);
   border-radius:50%; display:grid; place-items:center; -webkit-tap-highlight-color:transparent;
-  transition:background .15s ease, transform .12s ease; }
-.lb-x:hover, .lb-nav:hover { background:rgba(12,12,11,.85); }
-.lb-x { top:calc(12px + env(safe-area-inset-top)); right:12px;
-  width:46px; height:46px; font-size:20px; line-height:1; font-weight:700; }
-.lb-nav { top:50%; transform:translateY(-50%); width:52px; height:52px;
-  font-size:34px; line-height:1; font-weight:700; }
-.lb-prev { right:10px; }
-.lb-next { left:10px; }
-.lb-x:active { background:#fff; color:#111; text-shadow:none; }
-.lb-nav:active { background:#fff; color:#111; text-shadow:none; transform:translateY(-50%) scale(.94); }
+  transition:background .16s ease, border-color .16s ease, transform .12s ease; }
+.lb-x svg, .lb-nav svg { width:56%; height:56%; filter:drop-shadow(0 1px 2px rgba(0,0,0,.55)); }
+.lb-x:hover, .lb-nav:hover { background:rgba(10,10,9,.72); border-color:rgba(255,255,255,.8); }
+.lb-x { top:calc(12px + env(safe-area-inset-top)); right:12px; width:44px; height:44px; }
+.lb-nav { top:50%; transform:translateY(-50%); width:50px; height:50px; }
+.lb-prev { left:12px; }
+.lb-next { right:12px; }
+.lb-x:active { background:rgba(255,255,255,.92); color:#141413; transform:scale(.94); }
+.lb-nav:active { background:rgba(255,255,255,.92); color:#141413; transform:translateY(-50%) scale(.94); }
 .lb-count { position:absolute; bottom:calc(14px + env(safe-area-inset-bottom)); inset-inline:0;
   text-align:center; color:rgba(255,255,255,.85); font-size:14px;
   font-variant-numeric:tabular-nums; direction:ltr; unicode-bidi:isolate; }
 @media (max-width:620px) {
-  .lb-nav { width:48px; height:48px; font-size:30px; }
-  .lb-prev { right:8px; } .lb-next { left:8px; }
+  .lb-nav { width:46px; height:46px; }
+  .lb-prev { left:8px; } .lb-next { right:8px; }
 }
 </style>
 </head>
@@ -1854,9 +1853,9 @@ footer { margin-top:22px; text-align:center; font-size:12.5px; color:var(--mut);
   </ul>
 </div>
 <div class="lb" id="lb" hidden>
-  <button class="lb-x" id="lbX" type="button" aria-label="סגירה">✕</button>
-  <button class="lb-nav lb-prev" id="lbP" type="button" aria-label="הקודם">›</button>
-  <button class="lb-nav lb-next" id="lbN" type="button" aria-label="הבא">‹</button>
+  <button class="lb-x" id="lbX" type="button" aria-label="סגירה"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lb-nav lb-prev" id="lbP" type="button" aria-label="התמונה הקודמת"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5.5L8 12l6.5 6.5"/></svg></button>
+  <button class="lb-nav lb-next" id="lbN" type="button" aria-label="התמונה הבאה"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 5.5L16 12l-6.5 6.5"/></svg></button>
   <div class="lb-stage" id="lbStage">
     <div class="lb-frame" id="lbFrame">
       <img class="lb-img lb-base" id="lbSmall" alt="" aria-hidden="true">
@@ -2006,7 +2005,7 @@ var GAL = {"0": [["L", "79fdd375b31ade2dbe6e26c9e9b9f172"], ["E", "10137|1E23C2B
     if (b) { ev.preventDefault(); open(b.dataset.g, +b.dataset.i || 0); }
   });
   document.getElementById('lbX').addEventListener('click', close);
-  // RTL: the arrow pointing right goes back, the one pointing left goes forward
+  // left goes back, right goes forward, as in any photo viewer
   document.getElementById('lbP').addEventListener('click', function () { show(idx - 1); });
   document.getElementById('lbN').addEventListener('click', function () { show(idx + 1); });
   lb.addEventListener('click', function (ev) {
@@ -2015,8 +2014,8 @@ var GAL = {"0": [["L", "79fdd375b31ade2dbe6e26c9e9b9f172"], ["E", "10137|1E23C2B
   document.addEventListener('keydown', function (ev) {
     if (lb.hidden) return;
     if (ev.key === 'Escape') close();
-    else if (ev.key === 'ArrowRight') show(idx - 1);
-    else if (ev.key === 'ArrowLeft') show(idx + 1);
+    else if (ev.key === 'ArrowRight') show(idx + 1);
+    else if (ev.key === 'ArrowLeft') show(idx - 1);
   });
   stage.addEventListener('touchstart', function (ev) {
     var t = ev.changedTouches[0]; sx = t.clientX; sy = t.clientY; moved = false;
