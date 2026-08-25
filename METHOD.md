@@ -104,3 +104,28 @@ Two things are worth keeping in mind when regenerating:
   carry the Unicode `Bidi_Mirrored` property, so in an RTL page the browser
   flips them and they end up pointing inward no matter which way round they are
   written.
+
+## Cars at Milano Linate
+
+The flight lands at Linate at 14:10 on 5 September, so the search is 5.9 15:00 to
+11.9 11:00. That is six rental days, and returning on the evening of 10.9 falls
+inside the same sixth day, so both return windows cost the same at almost every
+supplier.
+
+Going supplier by supplier through their own booking engines does not scale: each
+one is a different SPA with its own calendar widget and no shared URL contract.
+What does scale is CarTrawler's OTA endpoint, which the easyJet car-hire page
+uses and which needs no key:
+
+`https://otageo.cartrawler.com/cartrawlerota/json?type=OTA_VehAvailRateRQ&msg=<json>`
+
+- `CT_VehLocSearchRQ` resolves a place name to a CarTrawler id (Milano Linate is `883`).
+- The same POS block with `VendorNamesOnly` set returns only the vendor list; drop
+  that flag and one request returns every car at the airport with its transmission,
+  fuel, capacity and total price. About 1.9 MB and 280 offers per query.
+- The supplier set is fixed by the partner contract, not by `GeoRadius`: widening
+  the radius from 5 to 50 km returns the same 14 suppliers.
+
+The supplier's own site can be cheaper than the channel: Sixt quotes 314.93 EUR on
+sixt.it for the same Jeep Avenger that the channel prices at 360.95 EUR, so the
+cheap options are worth re-checking at the source.
