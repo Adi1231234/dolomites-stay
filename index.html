@@ -157,11 +157,10 @@ footer { margin-top:22px; text-align:center; font-size:12.5px; color:var(--mut);
   display:grid; grid-template-rows:1fr; place-items:center;
   padding:calc(14px + env(safe-area-inset-top)) 14px calc(14px + env(safe-area-inset-bottom)); }
 .lb-stage { width:100%; height:100%; display:grid; place-items:center; }
-/* two stacked layers: the cached thumbnail shows at once, the full photo fades in over it */
+/* one photo layer plus a spinner; nothing is stacked over the photo itself */
 .lb-frame { position:relative; display:grid; place-items:center; max-width:100%; max-height:100%; }
 .lb-img { grid-area:1/1; max-width:100%; max-height:calc(100vh - 60px); border-radius:12px;
   display:block; transition:opacity .18s ease; }
-.lb-base { filter:blur(6px); transform:scale(1.02); }
 .lb-spin { grid-area:1/1; width:30px; height:30px; align-self:center; justify-self:center;
   border:3px solid rgba(255,255,255,.25); border-top-color:#fff; border-radius:50%;
   opacity:0; transition:opacity .15s ease .25s; animation:lbspin .8s linear infinite; }
@@ -1858,8 +1857,7 @@ footer { margin-top:22px; text-align:center; font-size:12.5px; color:var(--mut);
   <button class="lb-nav lb-next" id="lbN" type="button" aria-label="התמונה הבאה"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 5.5L16 12l-6.5 6.5"/></svg></button>
   <div class="lb-stage" id="lbStage">
     <div class="lb-frame" id="lbFrame">
-      <img class="lb-img lb-base" id="lbSmall" alt="" aria-hidden="true">
-      <img class="lb-img lb-top" id="lbImg" alt="">
+      <img class="lb-img" id="lbImg" alt="">
       <div class="lb-spin" id="lbSpin"></div>
     </div>
   </div>
@@ -1930,7 +1928,7 @@ var GAL = {"0": ["d3e72ca382d8", "5dbabd8a77ea", "faecea76b161", "907d497ac61a",
 
 (function () {
   var lb = document.getElementById('lb'), img = document.getElementById('lbImg'),
-      small = document.getElementById('lbSmall'), spin = document.getElementById('lbSpin'),
+      spin = document.getElementById('lbSpin'),
       cnt = document.getElementById('lbC'), stage = document.getElementById('lbStage');
   var list = [], idx = 0, sx = 0, sy = 0, moved = false, token = 0;
 
@@ -1945,28 +1943,20 @@ var GAL = {"0": ["d3e72ca382d8", "5dbabd8a77ea", "faecea76b161", "907d497ac61a",
     idx = (i + list.length) % list.length;
     var id = list[idx], my = ++token;
     cnt.textContent = (idx + 1) + ' / ' + list.length;
-    // 1. paint the thumbnail at once when the card already put it in cache;
-    //    when it is not cached, stay blank rather than leave the previous photo on screen
+    // clear the previous photo right away, then bring the new one in once it has
+    // decoded, so the arrow never leaves a stale or half-painted image on screen
     img.style.opacity = 0;
     spin.style.opacity = 1;
-    small.style.opacity = 0;
-    small.onload = null;
-    small.src = url(id);
-    if (small.complete && small.naturalWidth) small.style.opacity = 1;
-    else small.onload = function () { if (my === token) small.style.opacity = 1; };
-    // 2. swap to the large one only once it has actually decoded
     var full = new Image();
     full.src = url(id, 1);
     var done = function () {
       if (my !== token) return;
       img.src = full.src;
       img.style.opacity = 1;
-      small.style.opacity = 0;
       spin.style.opacity = 0;
     };
     if (full.decode) full.decode().then(done).catch(done);
     else { full.onload = done; full.onerror = done; }
-    preload(idx + 1); preload(idx - 1); preload(idx + 2);
   }
   function open(g, i) {
     list = (window.GAL && window.GAL[g]) || [];
@@ -1974,14 +1964,15 @@ var GAL = {"0": ["d3e72ca382d8", "5dbabd8a77ea", "faecea76b161", "907d497ac61a",
     lb.hidden = false;
     document.documentElement.style.overflow = 'hidden';
     show(i || 0);
-    // thumbnails for the whole gallery: tiny, and they make every later step paint at once
-    list.forEach(function (id) { var im = new Image(); im.src = url(id); });
+    // the whole gallery is on this origin and weighs ~45 KB a photo, so fetch it all
+    // up front and every later step is instant
+    list.forEach(function (id) { var im = new Image(); im.src = url(id, 1); });
   }
   function close() {
     token++;
     lb.hidden = true;
     document.documentElement.style.overflow = '';
-    img.removeAttribute('src'); small.removeAttribute('src');
+    img.removeAttribute('src');
   }
 
   document.addEventListener('click', function (ev) {
