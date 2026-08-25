@@ -92,9 +92,14 @@ a photo appeared; from this origin the same photo opens in under 0.5 s.
 
 Two things are worth keeping in mind when regenerating:
 
-- The build order is `images.py` → `imgfetch.py` → `make_html2.py`. `imgfetch.py`
-  rewrites `gallery_c` from CDN tokens into local ids, so running `images.py`
-  again undoes that and it has to be re-run.
+- The build order is `images.py` → `roomfirst.py` → `make_html2.py`.
+  `roomfirst.py` (which calls `imgfetch.py`) rewrites `gallery_c` from CDN tokens
+  into local ids, so running `images.py` again undoes that and it has to be re-run.
+- Room photos come first in every gallery. The HGV API attaches `pictures` to each
+  room record and the tourist board puts its room list after
+  `lts-search-rooms__container`, which covers 78 of the 150 properties. Val Gardena
+  labels nothing, so the remaining galleries are ordered by how much sky, greenery
+  and snow is in the frame, which puts indoor shots first.
 - The lightbox arrows are SVG, not the `‹` `›` characters. Those characters
   carry the Unicode `Bidi_Mirrored` property, so in an RTL page the browser
   flips them and they end up pointing inward no matter which way round they are
