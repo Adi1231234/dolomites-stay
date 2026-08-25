@@ -129,3 +129,21 @@ uses and which needs no key:
 The supplier's own site can be cheaper than the channel: Sixt quotes 314.93 EUR on
 sixt.it for the same Jeep Avenger that the channel prices at 360.95 EUR, so the
 cheap options are worth re-checking at the source.
+
+### Checking the car prices twice
+
+Booking.com's car search quotes the same fourteen Linate suppliers and is driven
+the same way. Its results page is fully parameterised
+(`cars.booking.com/search-results?...&locationIata=LIN&puDay=5&puHour=15&...`), and
+behind it sits `/api/search-results`, which takes the whole query as one JSON
+parameter. It needs the site's own session cookies, so it is called from the page
+rather than with curl.
+
+The two engines agree within a few percent but not exactly, and neither is
+consistently cheaper: Booking wins on Drivalia (183.29 vs 193.89 EUR), Noleggiare
+(200.85 vs 229.86) and Avis (261.50 vs 279.89), while the CarTrawler channel wins
+on Sicily by Car, Maggiore, Ecovia and Autovia. Each card shows both numbers and
+links to whichever is cheaper. Sixt's own site still beats both.
+
+In Booking's response the supplier is not on the offer: `match.route.pickUpDepotId`
+points into `depots`, whose `supplierId` points into `suppliers`.
