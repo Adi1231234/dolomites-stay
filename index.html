@@ -2,672 +2,461 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>דולומיטים 5-10.9 · אופציות שעומדות בתנאים</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f5f4b">
+<meta name="description" content="מקומות לינה זמינים 5-10.9.2026 עד 20 דקות מאורטיזיי, ממוינים מהזול ליקר">
+<title>איפה לישון בדולומיטים · 5–10.9</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:#faf7f2; --panel:#fff; --ink:#1c1a17; --mut:#6f675c; --line:#e6dfd4;
-  --accent:#1f5f4b; --accent-soft:#e8f2ee; --warn:#8a5a1e; --warn-soft:#fdf2e2;
-  --shadow:0 1px 2px rgba(28,26,23,.04), 0 8px 24px rgba(28,26,23,.06);
+  --bg:#faf7f2; --panel:#fff; --ink:#1a1815; --mut:#6e6659; --line:#e7e0d5;
+  --accent:#1f5f4b; --accent-ink:#fff; --soft:#e6f1ec;
+  --sh:0 1px 2px rgba(26,24,21,.05), 0 6px 18px rgba(26,24,21,.05);
+  --nav:rgba(250,247,242,.86);
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg:#15140f; --panel:#1f1d18; --ink:#f2ede4; --mut:#a79d8e; --line:#332f27;
-    --accent:#7fd3b4; --accent-soft:#1c3a31; --warn:#e2b072; --warn-soft:#382a17;
-    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+@media (prefers-color-scheme:dark) {
+  :root:not([data-theme=light]) {
+    --bg:#141310; --panel:#1e1c18; --ink:#f3eee5; --mut:#a49a8b; --line:#332f28;
+    --accent:#7fd3b4; --accent-ink:#11201b; --soft:#1b352d;
+    --sh:0 1px 2px rgba(0,0,0,.35), 0 6px 18px rgba(0,0,0,.3);
+    --nav:rgba(20,19,16,.86);
   }
 }
-* { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--ink);
-  font-family:"Heebo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif; line-height:1.55; }
-.wrap { max-width:1080px; margin:0 auto; padding:32px 20px 80px; }
+*,*::before,*::after { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--ink); line-height:1.5;
+  font-family:Heebo,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  font-size:16px; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:760px; margin:0 auto; padding:0 14px calc(48px + env(safe-area-inset-bottom)); }
 
-header.top { padding:40px 0 28px; border-bottom:1px solid var(--line); margin-bottom:36px; }
-header.top h1 { margin:0 0 6px; font-size:clamp(28px,4.4vw,42px); font-weight:800; letter-spacing:-.02em; }
-header.top .sub { color:var(--mut); font-size:17px; margin:0 0 22px; }
-.meta { display:flex; flex-wrap:wrap; gap:10px; }
-.meta span { background:var(--panel); border:1px solid var(--line); border-radius:999px;
-  padding:6px 14px; font-size:14px; color:var(--mut); }
-.meta b { color:var(--ink); font-weight:600; }
+/* ---------- header ---------- */
+header { padding:22px 0 14px; }
+h1 { margin:0; font-size:26px; font-weight:800; letter-spacing:-.02em; }
+.tag { margin:6px 0 0; color:var(--mut); font-size:14.5px; }
+.facts { display:flex; flex-wrap:wrap; gap:6px; margin:14px 0 0; }
+.facts span { font-size:13px; color:var(--mut); background:var(--panel);
+  border:1px solid var(--line); border-radius:999px; padding:4px 11px; }
+.facts b { color:var(--ink); font-weight:600; }
 
-.stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin:26px 0 0; }
-.stat { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px 16px; }
-.stat .n { font-size:26px; font-weight:800; letter-spacing:-.02em; }
-.stat .l { font-size:13px; color:var(--mut); }
+details.stats { margin:12px 0 0; border:1px solid var(--line); border-radius:12px;
+  background:var(--panel); overflow:hidden; }
+details.stats summary { cursor:pointer; list-style:none; padding:11px 14px;
+  font-size:14px; color:var(--mut); display:flex; justify-content:space-between; gap:10px; }
+details.stats summary::-webkit-details-marker { display:none; }
+details.stats summary b { color:var(--ink); font-weight:600; }
+details.stats summary::after { content:"▾"; color:var(--mut); transition:.2s; }
+details.stats[open] summary::after { transform:rotate(180deg); }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line);
+  border-top:1px solid var(--line); }
+.grid div { background:var(--panel); padding:12px 14px; }
+.grid .n { font-size:21px; font-weight:800; letter-spacing:-.02em; line-height:1.15; }
+.grid .l { font-size:12.5px; color:var(--mut); }
 
-.filters { display:flex; flex-wrap:wrap; gap:8px; margin:30px 0 6px; }
-.filters button { font:inherit; font-size:14px; cursor:pointer; padding:7px 15px; border-radius:999px;
-  border:1px solid var(--line); background:var(--panel); color:var(--mut); transition:.15s; }
-.filters button:hover { border-color:var(--accent); color:var(--ink); }
-.filters button[aria-pressed="true"] { background:var(--accent); border-color:var(--accent); color:var(--bg); font-weight:600; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .filters button[aria-pressed="true"] { color:#12211c; } }
+/* ---------- sticky filters ---------- */
+.bar { position:sticky; top:0; z-index:20; margin:14px -14px 0; padding:10px 14px;
+  background:var(--nav); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line); }
+.bar-in { display:flex; gap:7px; overflow-x:auto; scrollbar-width:none; }
+.bar-in::-webkit-scrollbar { display:none; }
+.bar button { flex:0 0 auto; font:inherit; font-size:14px; font-weight:500; cursor:pointer;
+  padding:8px 15px; min-height:38px; border-radius:999px; border:1px solid var(--line);
+  background:var(--panel); color:var(--mut); white-space:nowrap; -webkit-tap-highlight-color:transparent; }
+.bar button[aria-pressed=true] { background:var(--accent); border-color:var(--accent);
+  color:var(--accent-ink); font-weight:600; }
 
-section { margin-top:44px; }
-.sec-head h2 { margin:0 0 4px; font-size:22px; font-weight:700; letter-spacing:-.01em; }
-.sec-head p { margin:0 0 18px; color:var(--mut); font-size:15px; }
-.cards { display:flex; flex-direction:column; gap:12px; }
+/* ---------- sections ---------- */
+section { margin-top:30px; }
+section h2 { margin:0; font-size:18px; font-weight:700; letter-spacing:-.01em; line-height:1.35; }
+section .sub { margin:4px 0 13px; color:var(--mut); font-size:14px; }
+.cards { display:flex; flex-direction:column; gap:10px; }
 
-.card { position:relative; display:grid; grid-template-columns:1fr 210px; gap:18px;
-  background:var(--panel); border:1px solid var(--line); border-radius:16px;
-  padding:20px 22px; box-shadow:var(--shadow); }
-.card .rank { position:absolute; inset-inline-start:-11px; top:20px; width:26px; height:26px;
-  border-radius:50%; background:var(--accent); color:var(--bg); display:grid; place-items:center;
-  font-size:13px; font-weight:700; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .card .rank { color:#12211c; } }
-.card-head h3 { margin:0; font-size:19px; font-weight:700; letter-spacing:-.01em; }
-.loc { color:var(--mut); font-size:14px; margin-top:2px; }
-.room { margin-top:10px; font-size:15px; }
-.chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
-.chip { font-size:12.5px; padding:3px 10px; border-radius:999px; border:1px solid var(--line); color:var(--mut); }
-.chip-yes { background:var(--accent-soft); border-color:transparent; color:var(--accent); font-weight:600; }
-.chip-no { background:transparent; }
-.gnote { margin-top:10px; font-size:12.5px; color:var(--mut); }
+/* ---------- card ---------- */
+.card { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+  padding:15px 16px; box-shadow:var(--sh); }
+.top { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
+.id { min-width:0; }
+.id h3 { margin:0; font-size:17px; font-weight:700; letter-spacing:-.01em; line-height:1.3;
+  display:inline; }
+.rank { display:inline-grid; place-items:center; width:21px; height:21px; border-radius:50%;
+  background:var(--accent); color:var(--accent-ink); font-size:12px; font-weight:700;
+  margin-inline-end:7px; vertical-align:2px; }
+.loc { margin:3px 0 0; font-size:13.5px; color:var(--mut); }
+.pr { flex:0 0 auto; text-align:center; }
+.pr b { display:block; font-size:25px; font-weight:800; letter-spacing:-.03em; line-height:1; }
+.pr span { font-size:12px; color:var(--mut); }
+.room { margin:11px 0 0; font-size:14.5px; }
+.chips { display:flex; flex-wrap:wrap; gap:5px; margin-top:9px; }
+.chip { font-size:12px; padding:3px 9px; border-radius:999px; border:1px solid var(--line); color:var(--mut); }
+.chip.ok { background:var(--soft); border-color:transparent; color:var(--accent); font-weight:600; }
+@media (prefers-color-scheme:dark) { :root:not([data-theme=light]) .chip.ok { color:#8fe0c2; } }
+.foot { display:flex; align-items:center; justify-content:space-between; gap:12px;
+  margin-top:13px; padding-top:12px; border-top:1px solid var(--line); flex-wrap:wrap; }
+.tot { font-size:12.5px; color:var(--mut); }
+.g { margin-inline-start:6px; opacity:.75; }
+.btn { flex:0 0 auto; text-decoration:none; font-size:14.5px; font-weight:600;
+  padding:10px 18px; min-height:42px; display:inline-flex; align-items:center;
+  border-radius:10px; background:var(--accent); color:var(--accent-ink);
+  -webkit-tap-highlight-color:transparent; }
+.btn:active { transform:scale(.98); }
+.empty { margin:0; color:var(--mut); font-size:14.5px; background:var(--panel);
+  border:1px dashed var(--line); border-radius:12px; padding:16px; }
 
-.card-price { border-inline-start:1px solid var(--line); padding-inline-start:18px;
-  display:flex; flex-direction:column; align-items:flex-start; justify-content:center; }
-.pn { font-size:32px; font-weight:800; letter-spacing:-.03em; line-height:1; }
-.pn .cur { font-size:20px; font-weight:500; color:var(--mut); margin-inline-end:2px; }
-.pl { font-size:13px; color:var(--mut); margin-top:2px; }
-.pt { font-size:13.5px; margin-top:8px; }
-.pe { font-size:12.5px; color:var(--mut); }
-.btn { margin-top:14px; display:inline-block; text-decoration:none; font-size:14px; font-weight:600;
-  padding:9px 16px; border-radius:10px; background:var(--accent); color:var(--bg); transition:.15s; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn { color:#12211c; } }
-.btn:hover { filter:brightness(1.08); }
-
-.empty { color:var(--mut); background:var(--panel); border:1px dashed var(--line);
-  border-radius:14px; padding:20px; margin:0; font-size:15px; }
-
-.note { margin-top:52px; background:var(--warn-soft); border:1px solid var(--line);
-  border-radius:14px; padding:20px 22px; font-size:14.5px; color:var(--ink); }
-.note h3 { margin:0 0 8px; font-size:16px; }
-.note ul { margin:8px 0 0; padding-inline-start:20px; color:var(--mut); }
+.note { margin-top:38px; border:1px solid var(--line); border-radius:14px;
+  background:var(--panel); padding:16px 17px; font-size:14px; }
+.note h3 { margin:0 0 7px; font-size:15.5px; }
+.note p { margin:0; color:var(--mut); }
+.note ul { margin:9px 0 0; padding-inline-start:18px; color:var(--mut); }
 .note li { margin:4px 0; }
+footer { margin-top:22px; text-align:center; font-size:12.5px; color:var(--mut); }
 
-@media (max-width:680px) {
-  .card { grid-template-columns:1fr; }
-  .card-price { border-inline-start:0; border-top:1px solid var(--line); padding-inline-start:0; padding-top:14px; }
-  .card .rank { inset-inline-start:auto; inset-inline-end:16px; top:16px; }
+/* ---------- wider screens ---------- */
+@media (min-width:620px) {
+  .wrap { padding:0 24px 72px; }
+  header { padding:36px 0 18px; }
+  h1 { font-size:36px; }
+  .tag { font-size:16px; }
+  .bar { margin:18px -24px 0; padding:12px 24px; }
+  .grid { grid-template-columns:repeat(4,1fr); }
+  section { margin-top:40px; }
+  section h2 { font-size:21px; }
+  .card { padding:18px 20px; }
+  .id h3 { font-size:18.5px; }
+  .pr b { font-size:29px; }
+  .btn { font-size:15px; }
+}
+@media (max-width:400px) {
+  .foot { flex-direction:column; align-items:stretch; }
+  .btn { justify-content:center; }
 }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<header class="top">
+<header>
   <h1>איפה לישון בדולומיטים</h1>
-  <p class="sub">כל האופציות שנמצאו זמינות ועומדות בתנאים, מהזול ליקר</p>
-  <div class="meta">
+  <p class="tag">כל האופציות הזמינות שעומדות בתנאים, מהזול ליקר</p>
+  <div class="facts">
     <span><b>5–10.9.2026</b> · 5 לילות</span>
     <span><b>2 מבוגרים</b></span>
     <span>עד <b>600 ₪</b> ללילה</span>
-    <span>מטבח בחדר <b>או</b> 2 ארוחות כלולות</span>
+    <span>מטבח <b>או</b> 2 ארוחות</span>
     <span>עד <b>20 דק׳</b> מאורטיזיי</span>
   </div>
-  <div class="stats">
-    <div class="stat"><div class="n">479</div><div class="l">מקומות לינה באזור</div></div>
-    <div class="stat"><div class="n">156</div><div class="l">נבדקו במנוע ההזמנות</div></div>
-    <div class="stat"><div class="n">50</div><div class="l">זמינים בתאריכים</div></div>
-    <div class="stat"><div class="n">104</div><div class="l">תפוסים לגמרי</div></div>
-  </div>
+  <details class="stats">
+    <summary><span>נבדקו <b>156</b> מקומות · <b>50</b> זמינים</span></summary>
+    <div class="grid">
+      <div><div class="n">479</div><div class="l">מקומות לינה באזור</div></div>
+      <div><div class="n">156</div><div class="l">נבדקו במנוע ההזמנות</div></div>
+      <div><div class="n">50</div><div class="l">זמינים בתאריכים</div></div>
+      <div><div class="n">104</div><div class="l">תפוסים לגמרי</div></div>
+    </div>
+  </details>
 </header>
 
-<div class="filters" id="filters">
+<div class="bar"><div class="bar-in" id="filters">
   <button data-f="all" aria-pressed="true">הכל</button>
-  <button data-f="kitchen" aria-pressed="false">רק עם מטבח</button>
-  <button data-f="board" aria-pressed="false">רק עם 2 ארוחות</button>
+  <button data-f="kitchen" aria-pressed="false">עם מטבח</button>
+  <button data-f="board" aria-pressed="false">עם 2 ארוחות</button>
+</div></div>
+
+<section id="t1">
+<h2>מטבח בחדר, עד 600 ₪</h2><p class="sub">זה בדיוק מה שחיפשת.</p>
+<div class="cards"><article class="card" data-kitchen="1" data-board="0">
+<div class="top">
+<div class="id"><span class="rank">1</span><h3>Residence Oberaldoss</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪475</b><span>ללילה</span></div>
 </div>
+<p class="room">Apartment &quot;Soldanella&quot; for 2 persons</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">30 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,374 ל-5 לילות · €680 </div>
+<a class="btn" href="https://www.oberaldoss.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top">
+<div class="id"><span class="rank">2</span><h3>Residence Oberaldoss</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪517</b><span>ללילה</span></div>
+</div>
+<p class="room">Apartment &quot;Soldanella&quot; for 2 persons</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">30 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,584 ל-5 לילות · €740 </div>
+<a class="btn" href="https://www.oberaldoss.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top">
+<div class="id"><span class="rank">3</span><h3>Hotel Chalet Dlaces</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪517</b><span>ללילה</span></div>
+</div>
+<p class="room">Apartment Romantic</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">35 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,584 ל-5 לילות · €740 <span class="g">Google: ₪1,040</span></div>
+<a class="btn" href="https://www.dlaces.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article></div>
+</section>
 
+<section id="t2">
+<h2>2 ארוחות כלולות, עד 600 ₪</h2><p class="sub">חצי פנסיון או פנסיון מלא, בלי צורך במטבח.</p>
+<div class="cards"><p class="empty">אין. חצי הפנסיון הזול ביותר באזור בתאריכים האלה הוא 629 ₪ ללילה.</p></div>
+</section>
 
-  <section>
-    <div class="sec-head"><h2>עומד בתנאי: מטבח בחדר, עד 600 ₪ ללילה</h2><p>זה מה שחיפשת. ממוין מהזול ביותר.</p></div>
-    <div class="cards">
-    <article class="card" data-town="Santa Cristina" data-kitchen="1" data-board="0" data-price="475">
-      <div class="rank">1</div>
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Residence Oberaldoss</h3>
-          <div class="loc">סנטה כריסטינה · 7 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Apartment &quot;Soldanella&quot; for 2 persons</div>
-        <div class="chips"><span class="chip chip-yes">מטבח בחדר</span><span class="chip chip-mut">ללא ארוחות</span><span class="chip chip-mut">30 מ״ר</span><span class="chip chip-mut">עד 2 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>475</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪2,374 לכל 5 הלילות</div>
-        <div class="pe">€680</div>
-        <a class="btn" href="https://www.oberaldoss.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
+<section id="t3">
+<h2>מתחת ל-600 ₪, בלי מטבח ובלי 2 ארוחות</h2><p class="sub">לינה בלבד או עם ארוחת בוקר. נכנס לתקציב.</p>
+<div class="cards"><article class="card" data-kitchen="0" data-board="0">
+<div class="top">
+<div class="id"><h3>Haus Einfeld</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪349</b><span>ללילה</span></div>
+</div>
+<p class="room">double room C</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">20 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪1,746 ל-5 לילות · €500 </div>
+<a class="btn" href="http://www.haus-einfeld.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top">
+<div class="id"><h3>Garni Hotel Rezia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪513</b><span>ללילה</span></div>
+</div>
+<p class="room">Premium</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ללא ארוחות</span><span class="chip">28 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,567 ל-5 לילות · €735 </div>
+<a class="btn" href="http://www.garnirezia.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top">
+<div class="id"><h3>Garni Hotel Aghél</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪524</b><span>ללילה</span></div>
+</div>
+<p class="room">Double room Superior with balcony</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">33 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,619 ל-5 לילות · €750 <span class="g">Google: ₪840</span></div>
+<a class="btn" href="http://www.aghel.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top">
+<div class="id"><h3>Agriturismo Maso Larciunei</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪545</b><span>ללילה</span></div>
+</div>
+<p class="room">Bera Zenz</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,724 ל-5 לילות · €780 <span class="g">Google: ₪743</span></div>
+<a class="btn" href="http://masolarciunei.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top">
+<div class="id"><h3>Hotel Corona Krone</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪555</b><span>ללילה</span></div>
+</div>
+<p class="room">Double Economy</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,773 ל-5 לילות · €794 </div>
+<a class="btn" href="http://www.hotel-corona.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="0">
+<div class="top">
+<div class="id"><h3>Garni Hotel Rezia</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪557</b><span>ללילה</span></div>
+</div>
+<p class="room">Premium</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ">ארוחת בוקר</span><span class="chip">28 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪2,787 ל-5 לילות · €798 </div>
+<a class="btn" href="http://www.garnirezia.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article></div>
+</section>
 
-    <article class="card" data-town="Santa Cristina" data-kitchen="1" data-board="0" data-price="517">
-      <div class="rank">2</div>
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Residence Oberaldoss</h3>
-          <div class="loc">סנטה כריסטינה · 7 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Apartment &quot;Soldanella&quot; for 2 persons</div>
-        <div class="chips"><span class="chip chip-yes">מטבח בחדר</span><span class="chip chip-mut">ארוחת בוקר</span><span class="chip chip-mut">30 מ״ר</span><span class="chip chip-mut">עד 2 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>517</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪2,584 לכל 5 הלילות</div>
-        <div class="pe">€740</div>
-        <a class="btn" href="https://www.oberaldoss.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
+<section id="t4">
+<h2>דירות עם מטבח מעל התקציב</h2><p class="sub">אם התקציב גמיש.</p>
+<div class="cards"><article class="card" data-kitchen="1" data-board="0">
+<div class="top">
+<div class="id"><h3>Martina Breakfast Lodge</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪796</b><span>ללילה</span></div>
+</div>
+<p class="room">Apart. Studio Deluxe</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,981 ל-5 לילות · €1,140 <span class="g">Google: ₪896</span></div>
+<a class="btn" href="http://www.martina-lodge.com/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=google_mybusiness&amp;utm_term=hotel" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top">
+<div class="id"><h3>Oberbuchfelder historic guestfarmhouse</h3><p class="loc">לאיון · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪807</b><span>ללילה</span></div>
+</div>
+<p class="room">Bauernchalet Nr.4 Rose hip</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">45 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪4,033 ל-5 לילות · €1,155 </div>
+<a class="btn" href="https://www.oberbuchfelder.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top">
+<div class="id"><h3>Oberbuchfelder historic guestfarmhouse</h3><p class="loc">לאיון · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪807</b><span>ללילה</span></div>
+</div>
+<p class="room">Farmchalet Nr..8 Pofl</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">47 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪4,033 ל-5 לילות · €1,155 </div>
+<a class="btn" href="https://www.oberbuchfelder.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top">
+<div class="id"><h3>Gasthof Toni</h3><p class="loc">קסטלרוטו · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪838</b><span>ללילה</span></div>
+</div>
+<p class="room">Apartment Stefan 2-6 persons</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">65 מ״ר</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪4,190 ל-5 לילות · €1,200 </div>
+<a class="btn" href="http://www.gasthof-toni.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top">
+<div class="id"><h3>Bonichhof</h3><p class="loc">לאיון · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪908</b><span>ללילה</span></div>
+</div>
+<p class="room">Suredl - Two-Bedroom Apartment with panoramic balcony</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">60 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪4,539 ל-5 לילות · €1,300 </div>
+<a class="btn" href="http://www.bonichhof.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top">
+<div class="id"><h3>Hotel · Bed &amp; Breakfast · Apartments Planaces</h3><p class="loc">אורטיזיי · במרכז מאורטיזיי</p></div>
+<div class="pr"><b>₪974</b><span>ללילה</span></div>
+</div>
+<p class="room">Comfort Suite &quot;Sella&quot;</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ארוחת בוקר</span><span class="chip">44 מ״ר</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪4,871 ל-5 לילות · €1,395 </div>
+<a class="btn" href="http://www.garniplanaces.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top">
+<div class="id"><h3>Oberbuchfelder historic guestfarmhouse</h3><p class="loc">לאיון · 17 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪1,212</b><span>ללילה</span></div>
+</div>
+<p class="room">Farmchalet nr.5 Plum</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">120 מ״ר</span><span class="chip">עד 6 אורחים</span></div>
+<div class="foot"><div class="tot">₪6,058 ל-5 לילות · €1,735 </div>
+<a class="btn" href="https://www.oberbuchfelder.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="1" data-board="0">
+<div class="top">
+<div class="id"><h3>Anna Lodges Dolomites</h3><p class="loc">סנטה כריסטינה · 7 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪1,328</b><span>ללילה</span></div>
+</div>
+<p class="room">Suite</p>
+<div class="chips"><span class="chip ok">מטבח בחדר</span><span class="chip ">ללא ארוחות</span><span class="chip">55 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪6,638 ל-5 לילות · €1,901 <span class="g">Google: ₪1,492</span></div>
+<a class="btn" href="https://www.anna-lodges.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article></div>
+</section>
 
-    <article class="card" data-town="Selva" data-kitchen="1" data-board="0" data-price="517">
-      <div class="rank">3</div>
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Hotel Chalet Dlaces</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Apartment Romantic</div>
-        <div class="chips"><span class="chip chip-yes">מטבח בחדר</span><span class="chip chip-mut">ללא ארוחות</span><span class="chip chip-mut">35 מ״ר</span><span class="chip chip-mut">עד 2 אורחים</span></div>
-        <div class="gnote">Google הראה ₪1,040 ללילה למקום הזה</div>
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>517</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪2,584 לכל 5 הלילות</div>
-        <div class="pe">€740</div>
-        <a class="btn" href="https://www.dlaces.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article></div>
-  </section>
-
-
-  <section>
-    <div class="sec-head"><h2>עומד בתנאי: 2 ארוחות כלולות, עד 600 ₪ ללילה</h2><p>חצי פנסיון או פנסיון מלא, בלי צורך במטבח.</p></div>
-    <div class="cards"><p class="empty">אין. חצי הפנסיון הזול ביותר שנמצא באזור בתאריכים האלה הוא 629 ₪ ללילה, קצת מעל התקציב.</p></div>
-  </section>
-
-
-  <section>
-    <div class="sec-head"><h2>מתחת ל-600 ₪, אבל בלי מטבח ובלי 2 ארוחות</h2><p>רק לינה או לינה עם ארוחת בוקר. מופיע כאן כי המחיר עומד בתקציב.</p></div>
-    <div class="cards">
-    <article class="card" data-town="Castelrotto" data-kitchen="0" data-board="0" data-price="349">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Haus Einfeld</h3>
-          <div class="loc">קסטלרוטו · 17 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">double room C</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-mut">ארוחת בוקר</span><span class="chip chip-mut">20 מ״ר</span><span class="chip chip-mut">עד 3 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>349</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪1,746 לכל 5 הלילות</div>
-        <div class="pe">€500</div>
-        <a class="btn" href="http://www.haus-einfeld.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="0" data-price="513">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Garni Hotel Rezia</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Premium</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-mut">ללא ארוחות</span><span class="chip chip-mut">28 מ״ר</span><span class="chip chip-mut">עד 3 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>513</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪2,567 לכל 5 הלילות</div>
-        <div class="pe">€735</div>
-        <a class="btn" href="http://www.garnirezia.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="0" data-price="524">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Garni Hotel Aghél</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Double room Superior with balcony</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-mut">ארוחת בוקר</span><span class="chip chip-mut">33 מ״ר</span><span class="chip chip-mut">עד 4 אורחים</span></div>
-        <div class="gnote">Google הראה ₪840 ללילה למקום הזה</div>
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>524</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪2,619 לכל 5 הלילות</div>
-        <div class="pe">€750</div>
-        <a class="btn" href="http://www.aghel.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="0" data-price="545">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Agriturismo Maso Larciunei</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Bera Zenz</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-mut">ארוחת בוקר</span><span class="chip chip-mut">עד 4 אורחים</span></div>
-        <div class="gnote">Google הראה ₪743 ללילה למקום הזה</div>
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>545</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪2,724 לכל 5 הלילות</div>
-        <div class="pe">€780</div>
-        <a class="btn" href="http://masolarciunei.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="0" data-price="555">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Hotel Corona Krone</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Double Economy</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-mut">ארוחת בוקר</span><span class="chip chip-mut">עד 2 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>555</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪2,773 לכל 5 הלילות</div>
-        <div class="pe">€794</div>
-        <a class="btn" href="http://www.hotel-corona.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="0" data-price="557">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Garni Hotel Rezia</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Premium</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-mut">ארוחת בוקר</span><span class="chip chip-mut">28 מ״ר</span><span class="chip chip-mut">עד 3 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>557</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪2,787 לכל 5 הלילות</div>
-        <div class="pe">€798</div>
-        <a class="btn" href="http://www.garnirezia.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article></div>
-  </section>
-
-
-  <section>
-    <div class="sec-head"><h2>קרוב לתנאים: דירות עם מטבח מעל התקציב</h2><p>שווה מבט אם התקציב גמיש.</p></div>
-    <div class="cards">
-    <article class="card" data-town="Castelrotto" data-kitchen="1" data-board="0" data-price="796">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Martina Breakfast Lodge</h3>
-          <div class="loc">קסטלרוטו · 17 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Apart. Studio Deluxe</div>
-        <div class="chips"><span class="chip chip-yes">מטבח בחדר</span><span class="chip chip-mut">ארוחת בוקר</span><span class="chip chip-mut">עד 4 אורחים</span></div>
-        <div class="gnote">Google הראה ₪896 ללילה למקום הזה</div>
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>796</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪3,981 לכל 5 הלילות</div>
-        <div class="pe">€1,140</div>
-        <a class="btn" href="http://www.martina-lodge.com/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=google_mybusiness&amp;utm_term=hotel" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Laion" data-kitchen="1" data-board="0" data-price="807">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Oberbuchfelder historic guestfarmhouse</h3>
-          <div class="loc">לאיון · 17 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Bauernchalet Nr.4 Rose hip</div>
-        <div class="chips"><span class="chip chip-yes">מטבח בחדר</span><span class="chip chip-mut">ללא ארוחות</span><span class="chip chip-mut">45 מ״ר</span><span class="chip chip-mut">עד 4 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>807</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪4,033 לכל 5 הלילות</div>
-        <div class="pe">€1,155</div>
-        <a class="btn" href="https://www.oberbuchfelder.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Laion" data-kitchen="1" data-board="0" data-price="807">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Oberbuchfelder historic guestfarmhouse</h3>
-          <div class="loc">לאיון · 17 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Farmchalet Nr..8 Pofl</div>
-        <div class="chips"><span class="chip chip-yes">מטבח בחדר</span><span class="chip chip-mut">ללא ארוחות</span><span class="chip chip-mut">47 מ״ר</span><span class="chip chip-mut">עד 4 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>807</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪4,033 לכל 5 הלילות</div>
-        <div class="pe">€1,155</div>
-        <a class="btn" href="https://www.oberbuchfelder.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Castelrotto" data-kitchen="1" data-board="0" data-price="838">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Gasthof Toni</h3>
-          <div class="loc">קסטלרוטו · 17 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Apartment Stefan 2-6 persons</div>
-        <div class="chips"><span class="chip chip-yes">מטבח בחדר</span><span class="chip chip-mut">ללא ארוחות</span><span class="chip chip-mut">65 מ״ר</span><span class="chip chip-mut">עד 5 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>838</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪4,190 לכל 5 הלילות</div>
-        <div class="pe">€1,200</div>
-        <a class="btn" href="http://www.gasthof-toni.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Laion" data-kitchen="1" data-board="0" data-price="908">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Bonichhof</h3>
-          <div class="loc">לאיון · 17 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Suredl - Two-Bedroom Apartment with panoramic balcony</div>
-        <div class="chips"><span class="chip chip-yes">מטבח בחדר</span><span class="chip chip-mut">ללא ארוחות</span><span class="chip chip-mut">60 מ״ר</span><span class="chip chip-mut">עד 6 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>908</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪4,539 לכל 5 הלילות</div>
-        <div class="pe">€1,300</div>
-        <a class="btn" href="http://www.bonichhof.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Ortisei" data-kitchen="1" data-board="0" data-price="974">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Hotel · Bed &amp; Breakfast · Apartments Planaces</h3>
-          <div class="loc">אורטיזיי · נקודת הייחוס מאורטיזיי</div>
-        </div>
-        <div class="room">Comfort Suite &quot;Sella&quot;</div>
-        <div class="chips"><span class="chip chip-yes">מטבח בחדר</span><span class="chip chip-mut">ארוחת בוקר</span><span class="chip chip-mut">44 מ״ר</span><span class="chip chip-mut">עד 4 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>974</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪4,871 לכל 5 הלילות</div>
-        <div class="pe">€1,395</div>
-        <a class="btn" href="http://www.garniplanaces.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Laion" data-kitchen="1" data-board="0" data-price="1212">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Oberbuchfelder historic guestfarmhouse</h3>
-          <div class="loc">לאיון · 17 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Farmchalet nr.5 Plum</div>
-        <div class="chips"><span class="chip chip-yes">מטבח בחדר</span><span class="chip chip-mut">ללא ארוחות</span><span class="chip chip-mut">120 מ״ר</span><span class="chip chip-mut">עד 6 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>1,212</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪6,058 לכל 5 הלילות</div>
-        <div class="pe">€1,735</div>
-        <a class="btn" href="https://www.oberbuchfelder.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Santa Cristina" data-kitchen="1" data-board="0" data-price="1328">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Anna Lodges Dolomites</h3>
-          <div class="loc">סנטה כריסטינה · 7 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Suite</div>
-        <div class="chips"><span class="chip chip-yes">מטבח בחדר</span><span class="chip chip-mut">ללא ארוחות</span><span class="chip chip-mut">55 מ״ר</span><span class="chip chip-mut">עד 2 אורחים</span></div>
-        <div class="gnote">Google הראה ₪1,492 ללילה למקום הזה</div>
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>1,328</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪6,638 לכל 5 הלילות</div>
-        <div class="pe">€1,901</div>
-        <a class="btn" href="https://www.anna-lodges.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article></div>
-  </section>
-
-
-  <section>
-    <div class="sec-head"><h2>קרוב לתנאים: 2 ארוחות כלולות מעל התקציב</h2><p>החצי פנסיון הזול ביותר שקיים באזור בתאריכים האלה.</p></div>
-    <div class="cards">
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="1" data-price="629">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Hotel Bellevue</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Camera Superior</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-yes">חצי פנסיון (2 ארוחות)</span><span class="chip chip-mut">30 מ״ר</span><span class="chip chip-mut">עד 3 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>629</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪3,143 לכל 5 הלילות</div>
-        <div class="pe">€900</div>
-        <a class="btn" href="http://www.hotelbellevue-valgardena.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="1" data-price="694">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Hotel Corona Krone</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Double Economy</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-yes">חצי פנסיון (2 ארוחות)</span><span class="chip chip-mut">עד 2 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>694</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪3,471 לכל 5 הלילות</div>
-        <div class="pe">€994</div>
-        <a class="btn" href="http://www.hotel-corona.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Siusi" data-kitchen="0" data-board="1" data-price="747">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Hotel Enzian</h3>
-          <div class="loc">סיוזי · 21 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Double room without balcony</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-yes">חצי פנסיון (2 ארוחות)</span><span class="chip chip-mut">17 מ״ר</span><span class="chip chip-mut">עד 2 אורחים</span></div>
-        
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>747</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪3,736 לכל 5 הלילות</div>
-        <div class="pe">€1,070</div>
-        <a class="btn" href="http://www.enzianhotel.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="1" data-price="766">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Hotel Daniel</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">premium room mountain view (1-3 pax)</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-yes">חצי פנסיון (2 ארוחות)</span><span class="chip chip-mut">עד 3 אורחים</span></div>
-        <div class="gnote">Google הראה ₪648 ללילה למקום הזה</div>
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>766</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪3,829 לכל 5 הלילות</div>
-        <div class="pe">€1,096</div>
-        <a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="1" data-price="778">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Hotel Daniel</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">superior room mountain view (1-2 pax)</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-yes">חצי פנסיון (2 ארוחות)</span><span class="chip chip-mut">עד 2 אורחים</span></div>
-        <div class="gnote">Google הראה ₪648 ללילה למקום הזה</div>
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>778</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪3,888 לכל 5 הלילות</div>
-        <div class="pe">€1,114</div>
-        <a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="1" data-price="778">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Hotel Daniel</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">superior room (1-3 pax)</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-yes">חצי פנסיון (2 ארוחות)</span><span class="chip chip-mut">עד 3 אורחים</span></div>
-        <div class="gnote">Google הראה ₪648 ללילה למקום הזה</div>
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>778</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪3,888 לכל 5 הלילות</div>
-        <div class="pe">€1,114</div>
-        <a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="1" data-price="791">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Hotel Alaska</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">Superior Room</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-yes">חצי פנסיון (2 ארוחות)</span><span class="chip chip-mut">עד 4 אורחים</span></div>
-        <div class="gnote">Google הראה ₪889 ללילה למקום הזה</div>
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>791</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪3,953 לכל 5 הלילות</div>
-        <div class="pe">€1,132</div>
-        <a class="btn" href="http://www.hotelalaska.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article>
-
-    <article class="card" data-town="Selva" data-kitchen="0" data-board="1" data-price="801">
-      
-      <div class="card-main">
-        <div class="card-head">
-          <h3>Hotel Daniel</h3>
-          <div class="loc">סלבה · 11 דק&#x27; מאורטיזיי</div>
-        </div>
-        <div class="room">family junior suite mountain view (2-5 pax)</div>
-        <div class="chips"><span class="chip chip-no">בלי מטבח</span><span class="chip chip-yes">חצי פנסיון (2 ארוחות)</span><span class="chip chip-mut">עד 5 אורחים</span></div>
-        <div class="gnote">Google הראה ₪648 ללילה למקום הזה</div>
-      </div>
-      <div class="card-price">
-        <div class="pn"><span class="cur">₪</span>801</div>
-        <div class="pl">ללילה</div>
-        <div class="pt">₪4,007 לכל 5 הלילות</div>
-        <div class="pe">€1,148</div>
-        <a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a>
-      </div>
-    </article></div>
-  </section>
+<section id="t5">
+<h2>2 ארוחות מעל התקציב</h2><p class="sub">חצי הפנסיון הזול ביותר שקיים בתאריכים האלה.</p>
+<div class="cards"><article class="card" data-kitchen="0" data-board="1">
+<div class="top">
+<div class="id"><h3>Hotel Bellevue</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪629</b><span>ללילה</span></div>
+</div>
+<p class="room">Camera Superior</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ok">חצי פנסיון (2 ארוחות)</span><span class="chip">30 מ״ר</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,143 ל-5 לילות · €900 </div>
+<a class="btn" href="http://www.hotelbellevue-valgardena.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="1">
+<div class="top">
+<div class="id"><h3>Hotel Corona Krone</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪694</b><span>ללילה</span></div>
+</div>
+<p class="room">Double Economy</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ok">חצי פנסיון (2 ארוחות)</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,471 ל-5 לילות · €994 </div>
+<a class="btn" href="http://www.hotel-corona.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="1">
+<div class="top">
+<div class="id"><h3>Hotel Enzian</h3><p class="loc">סיוזי · 21 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪747</b><span>ללילה</span></div>
+</div>
+<p class="room">Double room without balcony</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ok">חצי פנסיון (2 ארוחות)</span><span class="chip">17 מ״ר</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,736 ל-5 לילות · €1,070 </div>
+<a class="btn" href="http://www.enzianhotel.com/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="1">
+<div class="top">
+<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪766</b><span>ללילה</span></div>
+</div>
+<p class="room">premium room mountain view (1-3 pax)</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ok">חצי פנסיון (2 ארוחות)</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,829 ל-5 לילות · €1,096 <span class="g">Google: ₪648</span></div>
+<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="1">
+<div class="top">
+<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪778</b><span>ללילה</span></div>
+</div>
+<p class="room">superior room mountain view (1-2 pax)</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ok">חצי פנסיון (2 ארוחות)</span><span class="chip">עד 2 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,888 ל-5 לילות · €1,114 <span class="g">Google: ₪648</span></div>
+<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="1">
+<div class="top">
+<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪778</b><span>ללילה</span></div>
+</div>
+<p class="room">superior room (1-3 pax)</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ok">חצי פנסיון (2 ארוחות)</span><span class="chip">עד 3 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,888 ל-5 לילות · €1,114 <span class="g">Google: ₪648</span></div>
+<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="1">
+<div class="top">
+<div class="id"><h3>Hotel Alaska</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪791</b><span>ללילה</span></div>
+</div>
+<p class="room">Superior Room</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ok">חצי פנסיון (2 ארוחות)</span><span class="chip">עד 4 אורחים</span></div>
+<div class="foot"><div class="tot">₪3,953 ל-5 לילות · €1,132 <span class="g">Google: ₪889</span></div>
+<a class="btn" href="http://www.hotelalaska.it/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article>
+<article class="card" data-kitchen="0" data-board="1">
+<div class="top">
+<div class="id"><h3>Hotel Daniel</h3><p class="loc">סלבה · 11 דק׳ מאורטיזיי</p></div>
+<div class="pr"><b>₪801</b><span>ללילה</span></div>
+</div>
+<p class="room">family junior suite mountain view (2-5 pax)</p>
+<div class="chips"><span class="chip ">בלי מטבח</span><span class="chip ok">חצי פנסיון (2 ארוחות)</span><span class="chip">עד 5 אורחים</span></div>
+<div class="foot"><div class="tot">₪4,007 ל-5 לילות · €1,148 <span class="g">Google: ₪648</span></div>
+<a class="btn" href="http://www.hoteldaniel.info/" target="_blank" rel="noopener">לאתר ולהזמנה ↗</a></div>
+</article></div>
+</section>
 
 <div class="note">
-  <h3>איך המספרים האלה נאספו, ומה עוד לא נבדק</h3>
-  <p>המחירים נשלפו ישירות ממנוע ההזמנות של התאחדות המלונאים של דרום טירול, לתאריכים המדויקים
-  ולשני מבוגרים. הזמינות אומתה פעמיים: מול נקודת הקצה של ההצעות וגם מול לוח הזמינות היומי.
-  ההמרה לפי 1 יורו = 3.4919 שקל. מחיר ללילה = סך השהות חלקי 5.</p>
+  <h3>מאיפה המספרים</h3>
+  <p>המחירים נשלפו ישירות ממנוע ההזמנות של התאחדות המלונאים של דרום טירול, לתאריכים המדויקים ולשני
+  מבוגרים. הזמינות אומתה פעמיים: מול נקודת הקצה של ההצעות וגם מול לוח הזמינות היומי.
+  המרה לפי 1 יורו = 3.4919 שקל, מחיר ללילה = סך השהות חלקי 5.</p>
   <ul>
     <li>156 מתוך 479 המקומות נבדקו כך. השאר יושבים על מנועי הזמנות אחרים ועדיין נבדקים.</li>
-    <li>מס תיירות מקומי (בערך 2-3 יורו לאדם ללילה) בדרך כלל לא כלול במחיר שמוצג.</li>
-    <li>המחיר של Google מופיע כשהוא קיים, רק כדי שתראה את הפער מול המחיר האמיתי במנוע.</li>
+    <li>מס תיירות מקומי, בערך 2-3 יורו לאדם ללילה, בדרך כלל לא כלול.</li>
+    <li>מחיר Google מוצג רק להשוואה מול המחיר האמיתי במנוע ההזמנות.</li>
   </ul>
 </div>
+
+<footer>עודכן לאחרונה בבדיקה מול מנוע ההזמנות · 50 מקומות זמינים מתוך 156 שנבדקו</footer>
 
 </div>
 <script>
 (function () {
   var bar = document.getElementById('filters');
-  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var cards = [].slice.call(document.querySelectorAll('.card'));
+  var secs = [].slice.call(document.querySelectorAll('section'));
   bar.addEventListener('click', function (ev) {
     var b = ev.target.closest('button');
     if (!b) return;
-    Array.prototype.forEach.call(bar.querySelectorAll('button'), function (x) {
+    [].forEach.call(bar.querySelectorAll('button'), function (x) {
       x.setAttribute('aria-pressed', String(x === b));
     });
     var f = b.dataset.f;
@@ -675,14 +464,12 @@ section { margin-top:44px; }
       var show = f === 'all'
         || (f === 'kitchen' && c.dataset.kitchen === '1')
         || (f === 'board' && c.dataset.board === '1');
-      c.style.display = show ? '' : 'none';
+      c.hidden = !show;
     });
-    document.querySelectorAll('section').forEach(function (s) {
-      var any = Array.prototype.some.call(s.querySelectorAll('.card'), function (c) {
-        return c.style.display !== 'none';
-      });
-      var hasCards = s.querySelectorAll('.card').length > 0;
-      s.style.display = (hasCards && !any) ? 'none' : '';
+    secs.forEach(function (s) {
+      var list = s.querySelectorAll('.card');
+      if (!list.length) { s.hidden = f !== 'all'; return; }
+      s.hidden = ![].some.call(list, function (c) { return !c.hidden; });
     });
   });
 })();
