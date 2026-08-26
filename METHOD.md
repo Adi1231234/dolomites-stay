@@ -166,3 +166,17 @@ Its search cannot be linked: the results live at `/search/<session-guid>` and th
 The date picker also ignores synthetic events; only real CDP mouse clicks on the
 day buttons register. The page therefore links to their Linate page and says the
 dates have to be entered again.
+
+## Phone numbers
+
+Every card carries a `tel:` link. The number a property prints on its own site
+wins, because that is the line it tells guests to call; where the site is
+unreachable or prints none, South Tyrol's Open Data Hub supplies it. The register
+links each accommodation to its LTS id, the same id the boards use, so the match
+is exact rather than by name: 148 of the 150 resolve that way, the other two come
+from the HGV API.
+
+Both sources were compared property by property: 82 agree exactly, 20 differ
+(landline against mobile of the same business), and 48 could only be sourced once.
+Numbers are validated before use, since a template site can print `000 000 0000`
+and a page can carry a VAT id that looks like a phone number.
