@@ -148,35 +148,28 @@ links to whichever is cheaper. Sixt's own site still beats both.
 In Booking's response the supplier is not on the offer: `match.route.pickUpDepotId`
 points into `depots`, whose `supplierId` points into `suppliers`.
 
-### A third engine, and why it matters
+### The broker layer, and a number that had to be corrected
 
-DiscoverCars carries a different inventory again: 682 offers for Linate on these
-dates, 393 of them automatic, from 29 suppliers. Fifteen of those are brokers that
-neither Booking nor CarTrawler sells at all: Rental4leisure, Ciao Rent Car,
-Clarent, Moventur, RentSmart24, MT Rent, Optimo Rent, Differental, SRC, B-Rent,
-plus Hertz, Thrifty, Dollar and National.
+DiscoverCars and Kayak both carry sellers that Booking and CarTrawler do not:
+Differental, Clarent, Moventur, Rental4leisure, RentSmart24, Ciao Rent Car, MT
+Rent, Optimo Rent, SRC and B-Rent on DiscoverCars, and GotRentalCars, Priceline,
+Auto Europe, Car Rental 8 and EconomyBookings through Kayak. That is where the
+cheaper prices are, on basic conditions with a large deposit and excess.
 
-That is where the cheap prices are. The cheapest automatic is 259 ILS for the six
-days, a Fiat 500X with five seats from Rental4leisure on a free shuttle from the
-terminal, against 640 ILS for a two-seat Fiat 500e through the official channels.
-The trade is basic conditions: a large deposit and a large excess.
+Kayak is not bot-protected, contrary to a first assumption made without testing.
+`kayak.com/cars/LIN/2026-09-05-15h/2026-09-11-11h?sort=price_a` loads directly
+with the exact times, returns 470 cars from 15 partners, and shows several sellers
+per car. Its `fs=trans=auto` filter is ignored, and its result list is virtualised,
+so only the first page can be read reliably.
 
-Its search cannot be linked: the results live at `/search/<session-guid>` and the
-`sq` query parameter is decorative, so a hand-built URL lands on "page not found".
-The date picker also ignores synthetic events; only real CDP mouse clicks on the
-day buttons register. The page therefore links to their Linate page and says the
-dates have to be entered again.
+DiscoverCars is linkable after all: each result carries a
+`discovercars.com/offer/<search-id>-<code>?sq=<base64>` URL with the dates encoded,
+even though the results page itself is bound to a session id.
 
-## Phone numbers
-
-Every card carries a `tel:` link. The number a property prints on its own site
-wins, because that is the line it tells guests to call; where the site is
-unreachable or prints none, South Tyrol's Open Data Hub supplies it. The register
-links each accommodation to its LTS id, the same id the boards use, so the match
-is exact rather than by name: 148 of the 150 resolve that way, the other two come
-from the HGV API.
-
-Both sources were compared property by property: 82 agree exactly, 20 differ
-(landline against mobile of the same business), and 48 could only be sourced once.
-Numbers are validated before use, since a template site can print `000 000 0000`
-and a page can carry a VAT id that looks like a phone number.
+One number here was published wrong and then corrected. A first pass read the
+cheapest automatic as 259 ILS by regex over the concatenated page text under the
+"most popular" sort, which paired a car from one card with a price from another.
+Sorting by price with the transmission filter actually applied gives 551 ILS
+(Differental, Fiat 500X, five seats, free shuttle) as the cheapest automatic on
+DiscoverCars, and 479 ILS through Kayak. The lesson: read a card as a card, not as
+a window over the page text.
