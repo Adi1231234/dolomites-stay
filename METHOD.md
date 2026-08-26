@@ -173,3 +173,30 @@ Sorting by price with the transmission filter actually applied gives 551 ILS
 (Differental, Fiat 500X, five seats, free shuttle) as the cheapest automatic on
 DiscoverCars, and 479 ILS through Kayak. The lesson: read a card as a card, not as
 a window over the page text.
+
+### Six engines, and what each one adds
+
+The same query (Linate, 5.9 to 11.9, six days, automatic) was run through six
+comparison engines. All six are drivable; none is bot-protected.
+
+- **Trip.com** 447 ILS, Ford Focus. Cheapest overall, but its cheap inventory sits
+  6.7 km from the airport, and it carries suppliers nobody else lists (Centauro).
+  `trip.com/carhire/online/list?pcode=LIN&ptime=...&rtime=...`
+- **Kayak** 479 ILS, VW T-Cross through GotRentalCars. Does not sell, it compares
+  online agencies, so it exposes a seller layer of its own (Priceline, Auto Europe,
+  Car Rental 8, EconomyBookings). `kayak.com/cars/LIN/2026-09-05-15h/2026-09-11-11h`
+  works with the exact times; its `fs=trans=auto` filter does not, and the result
+  list is virtualised.
+- **DiscoverCars** 551 ILS. 29 suppliers, the broker layer, per-offer deep links.
+- **Klook** 560 ILS, an electric Peugeot E-208. 134 automatic cars, 1,019 deals.
+  Its results URL takes everything as plain parameters, including `iata=LIN` and
+  `pDate` / `dDate`, which makes it the easiest of the six to drive.
+- **Booking.com** and **easyJet / CarTrawler** 640 ILS. The same fourteen official
+  suppliers, prices within a few percent of each other.
+
+The spread on the same category is 43 percent, and the cheapest is not always at
+the terminal or the same number of seats, so the location and seat count matter as
+much as the number.
+
+Not reachable: gotrentalcars.com does not resolve, and qeeq.com/car-rental
+redirects to an error page.
